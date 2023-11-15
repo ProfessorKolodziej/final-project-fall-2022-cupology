@@ -5,6 +5,9 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 48px;
+	/* Lighter font for 'Hi! We are' */
+	margin-bottom: 0.3em;
+
 	/* 150% */
 }
 
@@ -16,6 +19,10 @@
 	font-weight: 700;
 	line-height: normal;
 	letter-spacing: -1.6px;
+	font-size: 72px;
+	/* Larger and bolder for 'SustainU' */
+	/* Theme color for 'SustainU' */
+	margin-bottom: 0.5em;
 }
 
 .intro-p {
@@ -32,4 +39,151 @@
 	flex-direction: column;
 	justify-content: center;
 	flex-shrink: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+	/* Adjust background color as needed */
+}
+
+header {
+	background-color: #ffffff;
+	/* Header background */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	/* Subtle shadow for depth */
+	padding: 20px 0;
+}
+
+body {
+	margin: 0;
+}
+
+.header {
+	position: relative;
+	overflow: hidden;
+	height: 100px;
+	background-color: #0e1e25;
+}
+
+.wave {
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+	transform: translateY(60%);
+}
+
+.wave svg {
+	width: 102%;
+	height: auto;
+	margin-left: -1%;
+	fill: #fff;
+}
+
+nav {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	padding: 0 20px;
+}
+
+/* Main content styles */
+.intro {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 10%;
+	background-color: #fff;
+	/* Background of the content area */
+}
+
+
+.intro-p p {
+	font-size: 18px;
+	/* Readable paragraph size */
+	line-height: 1.6;
+	color: #666;
+	/* Slightly muted paragraph text */
+}
+
+.side-be-side {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px 0;
+}
+
+.about-us-image img {
+	width: 50%;
+	/* Adjust width as needed */
+	margin-right: 50px;
+	/* Space between the image and the text */
+}
+
+/* Styles for drive and approach sections */
+.drive,
+.approach {
+	margin-left: 50px;
+}
+
+.drive h2,
+.approach h2 {
+	font-size: 30px;
+	/* Size of section headings */
+	color: #333;
+	/* Color of section headings */
+	margin-bottom: 15px;
+}
+
+/* Footer and contact button styles */
+footer {
+	background-color: #333;
+	/* Footer background */
+	color: #fff;
+	/* Footer text color */
+	text-align: center;
+	padding: 20px 0;
+}
+
+.contact-button {
+	display: inline-block;
+	background-color: #017bff;
+	/* Button color */
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+	/* Remove underline from links */
+	font-weight: 700;
+	/* Bold font for button text */
+}
+
+.contact-button:hover {
+	background-color: #0166cc;
+	/* Darker button color on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+
+	.intro,
+	.side-be-side {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.about-us-image img,
+	.drive,
+	.approach {
+		width: 90%;
+		/* Full width on smaller screens */
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
 }
