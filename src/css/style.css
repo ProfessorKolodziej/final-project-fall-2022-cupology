@@ -5,9 +5,23 @@ a {
 	/* This makes the link color the same as the parent element, or you can set a specific color */
 }
 
-.whole-page {
-	background-color: #D2DACE;
+.home-page {
+	background-image: url('/images/home-background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	/* Use '100vh' to cover at least the full height of the viewport */
 }
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #D2DACE;
+	/* Other styles */
+}
+
 
 .text-content {
 	color: var(--gray-900, #0A3622);
@@ -57,12 +71,17 @@ a {
 	transform: translateY(60%);
 }
 
-.wave svg {
+.wave-filled svg {
 	width: 105%;
 	height: auto;
 	margin-left: -1%;
 	fill: #D2DACE;
 }
+
+.wave-transparent svg {
+	fill: transparent;
+}
+
 
 nav {
 	color: #fff;
@@ -130,7 +149,7 @@ footer {
 	margin-top: 50px;
 }
 
-.contact-button {
+.contact-button-about-us {
 	display: inline-block;
 	background-color: #06281E;
 	/* Button color */
@@ -143,4 +162,60 @@ footer {
 	font-weight: 700;
 
 	/* Bold font for button text */
+}
+
+.Cupology {
+	color: var(--green-800, #0A3622);
+	font-family: BioRhyme;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 60px;
+	position: absolute;
+	top: 8%;
+	left: 46%;
+}
+
+.slogan {
+	font-family: DM Serif Text;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 48px;
+	position: absolute;
+	top: 37%;
+	left: 47%;
+}
+
+.button-contact {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	text-decoration: none;
+	/* Remove underline from links */
+	color: white;
+	/* Button text color */
+	background-color: #06281E;
+	/* Green background */
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+	position: absolute;
+	top: 90%;
+	left: 3%;
+	font-size: 18px;
+}
+
+.button-get-started {
+	display: inline-block;
+	padding: 14px 48px;
+	margin: 5px;
+	border-radius: 7px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	position: absolute;
+	font-size: 32px;
+	top: 63%;
+	left: 47%;
 }
