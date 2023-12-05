@@ -164,6 +164,18 @@ footer {
 	/* Bold font for button text */
 }
 
+.news-page{
+	background-color: #D1E7DD;
+}
+
+.article-info{
+	color: #28A745;
+	font-family: DM Serif Text;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 29px; /* 161.111% */
+}
 .Cupology {
 	color: var(--green-800, #0A3622);
 	font-family: BioRhyme;
