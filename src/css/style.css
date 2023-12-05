@@ -164,8 +164,56 @@ footer {
 	/* Bold font for button text */
 }
 
-.news-page{
-	background-color: #D1E7DD;
+.news-page {
+    background-color: #D1E7DD;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.air-pollution-article {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+	display: grid;
+ 	grid-template-columns: 2fr 8fr;
+ 	align-items: center;
+ 	gap: 35px;
+ 	margin-left: 50px;
+ 	margin-right: 30px;
+}
+
+.article-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.article {
+    background-color: #ffffff; /* Set a white background for all articles */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px; /* Consistent padding for visual grouping */
+    margin-bottom: 20px; /* Space below each card */
+    width: 100%; /* Make the featured article full width */
+    box-sizing: border-box;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .article-row {
+        flex-direction: column;
+    }
+    
+    .article {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add space between articles */
+    }
 }
 
 .article-info{
@@ -175,6 +223,24 @@ footer {
 	font-style: normal;
 	font-weight: 400;
 	line-height: 29px; /* 161.111% */
+}
+
+.article-content{
+	color: #000;
+	font-family: Inter;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 20px; /* 133.333% */
+}
+
+.article-title{
+	color: #000;
+	font-family: DM Serif Text;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 32px; /* 106.667% */
 }
 .Cupology {
 	color: var(--green-800, #0A3622);
