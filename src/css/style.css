@@ -1,14 +1,14 @@
-.hi-we-are {
-	color: var(--gray-900, #212529);
+.whole-page {
+	background-color: #D2DACE;
+}
+
+.text-content {
+	color: var(--gray-900, #0A3622);
 	font-family: DM Serif Text;
-	font-size: 32px;
+	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 48px;
-	/* Lighter font for 'Hi! We are' */
-	margin-bottom: 0.3em;
-
-	/* 150% */
 }
 
 .sustainu {
@@ -18,53 +18,27 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	letter-spacing: -1.6px;
 	font-size: 72px;
-	/* Larger and bolder for 'SustainU' */
-	/* Theme color for 'SustainU' */
-	margin-bottom: 0.5em;
+	margin-top: -100px;
 }
 
 .intro-p {
 	color: var(--gray-900, #212529);
-	font-family: DM Serif Text;
-	font-size: 18px;
-	font-style: normal;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
-	/* 166.667% */
-	display: flex;
-	width: 585px;
-	height: 103px;
-	flex-direction: column;
 	justify-content: center;
-	flex-shrink: 0;
+	margin-top: -90px;
+	font-family: DM Serif Text;
+	letter-spacing: 1.2px;
+	font-style: normal;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #f4f4f4;
-	/* Adjust background color as needed */
-}
-
-header {
-	background-color: #ffffff;
-	/* Header background */
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-	/* Subtle shadow for depth */
-	padding: 20px 0;
-}
-
-body {
-	margin: 0;
-}
 
 .header {
 	position: relative;
 	overflow: hidden;
-	height: 100px;
+	height: 120px;
 	background-color: #0e1e25;
 }
 
@@ -77,14 +51,15 @@ body {
 }
 
 .wave svg {
-	width: 102%;
+	width: 105%;
 	height: auto;
 	margin-left: -1%;
-	fill: #fff;
+	fill: #D2DACE;
 }
 
 nav {
 	color: #fff;
+	font-size: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -93,97 +68,72 @@ nav {
 }
 
 /* Main content styles */
-.intro {
-	display: flex;
+.grid-container {
+	display: grid;
+	grid-template-columns: 7fr 4fr;
+	/* Creates two columns of equal width */
 	align-items: center;
-	justify-content: space-between;
-	padding: 20px 10%;
-	background-color: #fff;
-	/* Background of the content area */
+	/* Vertically aligns the grid items */
+	gap: 35px;
+	/* Adds space between the columns */
+	margin-left: 50px;
+	margin-right: 30px;
 }
 
-
-.intro-p p {
-	font-size: 18px;
-	/* Readable paragraph size */
-	line-height: 1.6;
-	color: #666;
-	/* Slightly muted paragraph text */
-}
-
-.side-be-side {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 50px 0;
-}
-
-.about-us-image img {
-	width: 50%;
-	/* Adjust width as needed */
-	margin-right: 50px;
-	/* Space between the image and the text */
+.image-content img {
+	width: 100%;
+	/* Ensures the image is responsive and fills its container */
+	height: auto;
+	/* Maintains the aspect ratio of the image */
 }
 
 /* Styles for drive and approach sections */
 .drive,
 .approach {
 	margin-left: 50px;
+	margin-right: 20px;
+	color: #000;
+	font-family: DM Serif Text;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 30px;
+	letter-spacing: 0.5px;
+	/* 166.667% */
 }
 
 .drive h2,
 .approach h2 {
-	font-size: 30px;
+	font-size: 35px;
 	/* Size of section headings */
-	color: #333;
+	color: #0A3622;
 	/* Color of section headings */
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 /* Footer and contact button styles */
 footer {
-	background-color: #333;
+	background-color: #D2DACE;
 	/* Footer background */
 	color: #fff;
 	/* Footer text color */
 	text-align: center;
 	padding: 20px 0;
+	margin-top: 50px;
 }
 
 .contact-button {
 	display: inline-block;
-	background-color: #017bff;
+	background-color: #06281E;
 	/* Button color */
 	color: #fff;
 	padding: 10px 20px;
-	border-radius: 5px;
+	border-radius: 20px;
 	transition: background-color 0.3s ease;
 	text-decoration: none;
 	/* Remove underline from links */
 	font-weight: 700;
+
 	/* Bold font for button text */
-}
-
-.contact-button:hover {
-	background-color: #0166cc;
-	/* Darker button color on hover */
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-
-	.intro,
-	.side-be-side {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.about-us-image img,
-	.drive,
-	.approach {
-		width: 90%;
-		/* Full width on smaller screens */
-		margin-right: 0;
-		margin-bottom: 20px;
-	}
 }
