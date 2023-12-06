@@ -6,7 +6,7 @@ According to Urbanethos.com, 16 billion paper cups are made each year, and this 
 ## Project Documentation
 
 - [CM523 Final Project Guidelines &amp; Schedule](https://docs.google.com/document/d/1gvG9_1XYfp5-BVUgCDL9JDaZ3Acm6hHP7lDF3MqXPzY/edit#heading=h.61wsleacz62i)
-- **Final code demo:** [Update this to show your Github Pages URL](https://professorkolodziej.github.io/cm523-final-project/). The URL will be `https://professorkolodziej.github.io/YOUR-REPOSITORY-NAME/`.
+- **Final code demo:** https://professorkolodziej.github.io/final-project-fall-2022-cupology/
 - Wireframe: https://www.figma.com/file/ajAiW4z4ZnRmDi0v5VOTRv/Design-your-cup?node-id=5590%3A3838&mode=dev; Presentation: https://www.canva.com/design/DAF2KNiigx4/nBZAcMsS9Ldp4u8A461blA/edit?utm_content=DAF2KNiigx4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton; Proposal: https://docs.google.com/document/d/1e5ejoy0hkL4Zs1Du3oWCNA2NbvDQCYqOVvhIgFFzW5w/edit;
 
 ## How to Use This Repository
