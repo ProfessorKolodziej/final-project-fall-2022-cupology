@@ -28,7 +28,7 @@ body {
 
 .text-content {
 	color: var(--gray-900, #0A3622);
-	font-family: DM serif Text;
+	font-family: "DM serif Text";
 	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
@@ -52,7 +52,7 @@ body {
 	line-height: 30px;
 	justify-content: center;
 	margin-top: -90px;
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	letter-spacing: 1.2px;
 	font-style: normal;
 }
@@ -116,7 +116,7 @@ nav {
 	margin-left: 50px;
 	margin-right: 20px;
 	color: #000;
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
@@ -164,7 +164,6 @@ footer {
 .air-pollution-article {
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
     width: 100%;
@@ -217,10 +216,9 @@ footer {
 }
 
 .article {
-	background-color: #ffffff;
+	background-color: #fff;
 	/* Set a white background for all articles */
 	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	/* Consistent padding for visual grouping */
 	margin-bottom: 20px;
@@ -246,7 +244,7 @@ footer {
 
 .article-info {
 	color: #28A745;
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
@@ -266,7 +264,7 @@ footer {
 
 .article-title {
 	color: #000;
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
@@ -304,7 +302,7 @@ footer {
 }
 
 .slogan {
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
@@ -439,9 +437,9 @@ body {
 	text-align: center;
 	font-size: 1rem;
 	/* font-weight: bold; */
-	color: #ffffff;
+	color: #fff;
 	background-color: #122603;
-	padding: 10px 20px 10px 20px;
+	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
 }
