@@ -1,14 +1,13 @@
-# Final Project (Replace with your project name)
+# Cuplogy
 
 ## Description
-
-Please add a brief description of your final project here.
+According to Urbanethos.com, 16 billion paper cups are made each year, and this leads to the death of 6.5 million trees. In this project, “Cuplogy,” we aim to create awareness of this issue and call on people’s action by bringing in their own cups. We want to do this by creating an interactive website that empowers users to design their own eco-friendly drinkware while incorporating additional features to enhance the user experience. This all ties back to our initial purpose: encourage environmental consciousness promoting the use of reusable containers over single-use ones.
 
 ## Project Documentation
 
 - [CM523 Final Project Guidelines &amp; Schedule](https://docs.google.com/document/d/1gvG9_1XYfp5-BVUgCDL9JDaZ3Acm6hHP7lDF3MqXPzY/edit#heading=h.61wsleacz62i)
 - **Final code demo:** [Update this to show your Github Pages URL](https://professorkolodziej.github.io/cm523-final-project/). The URL will be `https://professorkolodziej.github.io/YOUR-REPOSITORY-NAME/`.
-- Add any links to wireframes, mockups, your presentation, etc. here in a list so it is easy for you to find later.
+- Wireframe: https://www.figma.com/file/ajAiW4z4ZnRmDi0v5VOTRv/Design-your-cup?node-id=5590%3A3838&mode=dev; Presentation: https://www.canva.com/design/DAF2KNiigx4/nBZAcMsS9Ldp4u8A461blA/edit?utm_content=DAF2KNiigx4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton; Proposal: https://docs.google.com/document/d/1e5ejoy0hkL4Zs1Du3oWCNA2NbvDQCYqOVvhIgFFzW5w/edit;
 
 ## How to Use This Repository
 
