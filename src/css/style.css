@@ -13,20 +13,11 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
-	/* Use '100vh' to cover at least the full height of the viewport */
 }
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-	background-color: #D2DACE;
-}
-
 
 .text-content {
 	color: var(--gray-900, #0A3622);
-	font-family: "DM serif Text";
+	font-family: "DM Serif Text", serif;
 	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
@@ -35,7 +26,7 @@ body {
 
 .sustainu {
 	color: var(--green-800, #0A3622);
-	font-family: BioRhyme;
+	font-family: BioRhyme, serif;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -50,7 +41,7 @@ body {
 	line-height: 30px;
 	justify-content: center;
 	margin-top: -90px;
-	font-family: "DM serif Text";
+	font-family: "DM serif Text", serif;
 	letter-spacing: 1.2px;
 	font-style: normal;
 }
@@ -114,7 +105,7 @@ nav {
 	margin-left: 50px;
 	margin-right: 20px;
 	color: #000;
-	font-family: "DM serif Text";
+	font-family: "DM serif Text", serif;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
@@ -201,7 +192,6 @@ footer {
 .text-content-climate-changes p {
 	color: #333;
 	font-size: 20px;
-	/* Adjust as needed */
 }
 
 /* electric-car */
@@ -231,7 +221,6 @@ footer {
 .text-content-electric-car h2 {
 	color: #333;
 	font-size: 35px;
-	/* Adjust as needed */
 }
 
 /* electric car */
@@ -263,7 +252,6 @@ footer {
 .text-content-sweat h2 {
 	color: #28A745;
 	font-size: 25px;
-	/* Adjust as needed */
 }
 
 /* sweat */
@@ -272,74 +260,61 @@ footer {
 .article-row {
 	display: grid;
 	grid-template-columns: 5fr 5fr 5fr;
-	/* Creates two columns of equal width */
 	align-items: center;
-	/* Vertically aligns the grid items */
 	gap: 35px;
-	/* Adds space between the columns */
-
 }
 
 .article {
 	background-color: #fff;
-	/* Set a white background for all articles */
 	border-radius: 10px;
 	padding: 20px;
-	/* Consistent padding for visual grouping */
 	margin-bottom: 20px;
-	/* Space below each card */
 	width: 100%;
-	/* Make the featured article full width */
 	box-sizing: border-box;
 }
 
 /* Responsive layout for smaller screens */
-@media (max-width: 768px) {
+@media (width <= 768px) {
 	.article-row {
-		flex-direction: column;
+	  flex-direction: column;
 	}
-
+  
 	.article {
-		width: 100%;
-		/* Full width on smaller screens */
-		margin-bottom: 20px;
-		/* Add space between articles */
+	  width: 100%;
+	  margin-bottom: 20px;
 	}
-}
+  }
 
 .article-info {
 	color: #28A745;
-	font-family: "DM serif Text";
+	font-family: "DM serif Text", serif;
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 29px;
-	/* 161.111% */
 }
 
 .article-content {
 	color: #000;
-	font-family: Inter;
+	font-family: Inter, serif;
 	font-size: 15px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 20px;
-	/* 133.333% */
 }
 
 .article-title {
 	color: #000;
-	font-family: "DM serif Text";
+	font-family: "DM serif Text", serif;
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 32px;
-	/* 106.667% */
 }
 
-.Cupology {
+.cupology {
 	color: var(--green-800, #0A3622);
-	font-family: BioRhyme;
+	font-family: BioRhyme, serif;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -350,7 +325,7 @@ footer {
 }
 
 .slogan {
-	font-family: "DM serif Text";
+	font-family: "DM serif Text", serif;
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
@@ -399,7 +374,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgb(0 0 0 / 40%);
 }
 
 .modal-content {
@@ -473,17 +448,16 @@ body {
 	z-index: -998;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgb(0 0 0 / 30%);
 }
 
-.center-Reset {
+.center-reset {
 	position: fixed;
 	top: 10%;
 	right: 5%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1rem;
-	/* font-weight: bold; */
 	color: #fff;
 	background-color: #122603;
 	padding: 10px 20px;
@@ -509,7 +483,6 @@ body {
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
-	/* font-weight: bold; */
 	color: #fff;
 	background-color: #122603;
 	padding: 10px 20px;

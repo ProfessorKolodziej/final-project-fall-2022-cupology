@@ -14,6 +14,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=BioRhyme&family=DM+Serif+Text&family=Roboto:wght@100;300;700&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,15 +26,15 @@
       <h2>Are you sure?</h2>
       <p>Resetting this quiz will remove all your choices so far.</p>
       <div class="modal-buttons">
-        <button class="close-button" onclick="closeConfirmation()">Close</button>
-        <button class="reset-button" onclick="queConfirmation()">Reset</button>
+        <button type="button" class="close-button" onclick="closeConfirmation()">Close</button>
+        <button type="reset" class="reset-button" onclick="resetConfirmation()">Reset</button>
       </div>
     </div>
   </div>
 
   <div class="background"></div>
   <div class="overlay"></div>
-  <div class="center-Reset" onclick="Reset()">
+  <div class="center-reset" onclick="Reset()">
     Reset
   </div>
 
@@ -62,10 +65,11 @@
         <img id="displayed-image2" src="/images/w1.png">
       </div>
       <div>
-        <button id="nextBtn" style="position: absolute;top: 50%;left: 20%;"> <img src="/images/left.png"
-            style="width: 50px;cursor: pointer;"></button>
+        <button type="button" id="nextBtn" style="position: absolute;top: 50%;left: 20%;">
+          <img src="/images/left.png" style="width: 50px;cursor: pointer;">
+        </button>        
         <div onclick="nextImage1()" style="position: absolute;top: 50%;right: 20%;">
-          < img src="/images/right.png" style="width: 50px;cursor: pointer;">
+          <img src="/images/right.png" style="width: 50px;cursor: pointer;">
         </div>
       </div>
     </div>
