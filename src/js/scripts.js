@@ -153,3 +153,10 @@ let imageIndex = 1;
       overlays[i].style.backgroundColor = 'rgb(0 0 0 / 0%)';
     }
   }
+
+  function nextImage() {
+    // your code here
+  }
+  
+  const nextBtn = document.querySelector('#nextBtn');
+  nextBtn.addEventListener('click', nextImage);

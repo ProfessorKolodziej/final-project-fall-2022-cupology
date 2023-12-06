@@ -58,7 +58,6 @@ body {
 
 .header {
 	position: relative;
-	overflow: hidden;
 	height: 120px;
 	background-color: #0e1e25;
 }
@@ -79,7 +78,8 @@ body {
 }
 
 .wave-transparent svg {
-	fill: transparent;
+	fill: black;
+	transform: scaleX(-1) scaleY(-1);
 }
 
 
@@ -151,25 +151,25 @@ footer {
 }
 
 .news-page {
-    background-color: #D1E7DD;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	background-color: #D1E7DD;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .air-pollution-article {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 20px;
+	width: 100%;
 	display: grid;
- 	grid-template-columns: 2fr 8fr;
- 	align-items: center;
- 	gap: 35px;
- 	margin-left: 50px;
- 	margin-right: 30px;
+	grid-template-columns: 2fr 8fr;
+	align-items: center;
+	gap: 35px;
+	margin-left: 50px;
+	margin-right: 30px;
 }
 
 /* climate changes */
@@ -178,6 +178,7 @@ footer {
 	margin: auto;
 	overflow: hidden;
 	background-color: white;
+	height: 100%;
 
 }
 
@@ -199,7 +200,7 @@ footer {
 
 .text-content-climate-changes p {
 	color: #333;
-	font-size: 16px;
+	font-size: 20px;
 	/* Adjust as needed */
 }
 
@@ -211,8 +212,9 @@ footer {
 	background-color: white;
 }
 
-.content-image-eletric-car {
+.content-image-electric-car {
 	width: 100%;
+	max-width: none;
 	display: block;
 }
 
@@ -240,6 +242,7 @@ footer {
 	margin: auto;
 	overflow: hidden;
 	background-color: white;
+	height: 100%;
 }
 
 .content-image-sweat {
@@ -257,7 +260,7 @@ footer {
 	font-size: 30px;
 }
 
-.text-content-swet p {
+.text-content-sweat h2 {
 	color: #28A745;
 	font-size: 25px;
 	/* Adjust as needed */
@@ -292,42 +295,48 @@ footer {
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
-    .article-row {
-        flex-direction: column;
-    }
-    
-    .article {
-        width: 100%; /* Full width on smaller screens */
-        margin-bottom: 20px; /* Add space between articles */
-    }
+	.article-row {
+		flex-direction: column;
+	}
+
+	.article {
+		width: 100%;
+		/* Full width on smaller screens */
+		margin-bottom: 20px;
+		/* Add space between articles */
+	}
 }
 
-.article-info{
+.article-info {
 	color: #28A745;
 	font-family: "DM serif Text";
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 29px; /* 161.111% */
+	line-height: 29px;
+	/* 161.111% */
 }
 
-.article-content{
+.article-content {
 	color: #000;
 	font-family: Inter;
 	font-size: 15px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 20px; /* 133.333% */
+	line-height: 20px;
+	/* 133.333% */
 }
 
-.article-title{
+.article-title {
 	color: #000;
 	font-family: "DM serif Text";
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 32px; /* 106.667% */
+	line-height: 32px;
+	/* 106.667% */
 }
+
 .Cupology {
 	color: var(--green-800, #0A3622);
 	font-family: BioRhyme;
@@ -437,36 +446,35 @@ footer {
 	border-radius: 5px;
 }
 
- /* cup selection */
- html,
- body {
-   height: 100%;
-   margin: 0;
-   padding: 0;
-   overflow: hidden;
- }
+/* cup selection */
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
 
- .background {
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: -999;
-   width: 100%;
-   height: 100%;
-   background-image: url('/images/1.png');
-   background-size: cover;
-   background-position: center;
- }
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -999;
+	width: 100%;
+	height: 100%;
+	background-image: url('/images/1.png');
+	background-size: cover;
+	background-position: center;
+}
 
- .overlay {
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: -998;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, 0.3);
- }
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -998;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+}
 
 .center-Reset {
 	position: fixed;
@@ -483,40 +491,40 @@ footer {
 	cursor: pointer;
 }
 
- .center-text {
-   position: fixed;
-   top: 15%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
-   font-size: 3rem;
-   font-weight: bold;
-   color: #000;
- }
+.center-text {
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 3rem;
+	font-weight: bold;
+	color: #000;
+}
 
- .center-button {
-   position: fixed;
-   top: 90%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
-   font-size: 1.5rem;
-   /* font-weight: bold; */
-   color: #fff;
-   background-color: #122603;
-   padding: 10px 20px;
-   border-radius: 5px;
-   cursor: pointer;
- }
+.center-button {
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	/* font-weight: bold; */
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
 
- .image-container {
-   text-align: center;
-   margin-top: 10%;
- }
+.image-container {
+	text-align: center;
+	margin-top: 10%;
+}
 
- .image-container img {
-   max-width: 100%;
-   max-height: 400px;
- }
+.image-container img {
+	max-width: 100%;
+	max-height: 400px;
+}
 
- /* cup selection */
+/* cup selection */

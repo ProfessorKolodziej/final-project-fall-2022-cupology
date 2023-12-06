@@ -6,14 +6,14 @@
   <title>cup-selection</title>
   <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Roboto:wght@100;300;700&display=swap"
-	  rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=BioRhyme&family=DM+Serif+Text&family=Roboto:wght@100;300;700&display=swap"
-		rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=BioRhyme&family=Roboto:wght@100;300;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=BioRhyme&family=DM+Serif+Text&family=Roboto:wght@100;300;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <div class="modal-content">
       <span class="close" onclick="closeConfirmation()">&times;</span>
       <h2>Are you sure?</h2>
-      <p>Resetting this quiz will remove all your choices so far.</p >
+      <p>Resetting this quiz will remove all your choices so far.</p>
       <div class="modal-buttons">
         <button class="close-button" onclick="closeConfirmation()">Close</button>
         <button class="reset-button" onclick="queConfirmation()">Reset</button>
@@ -43,9 +43,9 @@
         <img class="displayed-image" src="/images/w1.png">
       </div>
       <div>
-        <div onclick="prevImage()" style="position: absolute;top: 50%;left: 20%;">< img src="/images/left.png"
+        <div onclick="prevImage()" style="position: absolute;top: 50%;left: 20%;"><img src="/images/left.png"
             style="width: 50px;cursor: pointer;"></div>
-        <div onclick="nextImage()" style="position: absolute;top: 50%;right: 20%;">< img src="/images/right.png"
+        <div onclick="nextImage()" style="position: absolute;top: 50%;right: 20%;"><img src="/images/right.png"
             style="width: 50px;cursor: pointer;"></div>
       </div>
     </div>
@@ -62,10 +62,11 @@
         <img id="displayed-image2" src="/images/w1.png">
       </div>
       <div>
-        <div onclick="prevImage1()" style="position: absolute;top: 50%;left: 20%;">< img src="/images/left.png"
-            style="width: 50px;cursor: pointer;"></div>
-        <div onclick="nextImage1()" style="position: absolute;top: 50%;right: 20%;">< img src="/images/right.png"
-            style="width: 50px;cursor: pointer;"></div>
+        <button id="nextBtn" style="position: absolute;top: 50%;left: 20%;"> <img src="/images/left.png"
+            style="width: 50px;cursor: pointer;"></button>
+        <div onclick="nextImage1()" style="position: absolute;top: 50%;right: 20%;">
+          < img src="/images/right.png" style="width: 50px;cursor: pointer;">
+        </div>
       </div>
     </div>
 
@@ -88,7 +89,7 @@
         </div>
         <div style="padding: 4%;">
           <h3>Great choice!</h3>
-          <p>You're all set to be Eco-friendly with your new reusable cup. Enjoy!</p >
+          <p>You're all set to be Eco-friendly with your new reusable cup. Enjoy!</p>
         </div>
       </div>
 
