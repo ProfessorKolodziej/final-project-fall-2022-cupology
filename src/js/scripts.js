@@ -36,7 +36,7 @@ let imageIndex = 1;
   function ok1() {
     // 获取元素  
     var element1 = document.getElementById("one");
-    // 设置display属性为none  
+    // display none  
     element1.style.display = "none";
     var element2 = document.getElementById("two");
     // 设置display属性为none  
