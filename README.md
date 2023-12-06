@@ -1,4 +1,4 @@
-# Cuplogy
+# Cupology
 
 ## Description
 According to Urbanethos.com, 16 billion paper cups are made each year, and this leads to the death of 6.5 million trees. In this project, “Cuplogy,” we aim to create awareness of this issue and call on people’s action by bringing in their own cups. We want to do this by creating an interactive website that empowers users to design their own eco-friendly drinkware while incorporating additional features to enhance the user experience. This all ties back to our initial purpose: encourage environmental consciousness promoting the use of reusable containers over single-use ones.
