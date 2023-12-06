@@ -190,31 +190,29 @@ footer {
 	margin-right: 30px;
 }
 
+/* climate changes */
 .content-box-climate-changes {
 	max-width: 500px;
-	/* Adjust as needed */
 	margin: auto;
 	overflow: hidden;
 	background-color: white;
-	/* Ensures the image does not overflow the div */
+
 }
 
 .content-image-climate-changes {
 	width: 100%;
 	display: block;
-	/* Removes bottom margin/whitespace */
+
 }
 
 .text-content-climate-changes {
-	background: #f0f0f0;
-	/* Light grey background */
-	padding: 20px;
+	background: white;
+	padding: 9px;
 }
 
 .text-content-climate-changes h1 {
 	color: #000;
-	font-size: 24px;
-	/* Adjust as needed */
+	font-size: 35px;
 }
 
 .text-content-climate-changes p {
@@ -223,11 +221,78 @@ footer {
 	/* Adjust as needed */
 }
 
-.article-row {
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
+/* electric-car */
+.content-box-electric-car {
+	max-width: 500px;
+	margin: auto;
+	overflow: hidden;
+	background-color: white;
+}
+
+.content-image-eletric-car {
 	width: 100%;
+	display: block;
+}
+
+.text-content-electric-car {
+	background: white;
+	padding: 9px;
+}
+
+.text-content-electric-car h1 {
+	color: #28A745;
+	font-size: 25px;
+}
+
+.text-content-electric-car h2 {
+	color: #333;
+	font-size: 35px;
+	/* Adjust as needed */
+}
+
+/* electric car */
+
+/* sweat */
+.content-box-sweat {
+	max-width: 500px;
+	margin: auto;
+	overflow: hidden;
+	background-color: white;
+}
+
+.content-image-sweat {
+	width: 100%;
+	display: block;
+}
+
+.text-content-sweat {
+	background: white;
+	padding: 9px;
+}
+
+.text-content-sweat h1 {
+	color: #333;
+	font-size: 30px;
+}
+
+.text-content-swet p {
+	color: #28A745;
+	font-size: 25px;
+	/* Adjust as needed */
+}
+
+/* sweat */
+
+
+.article-row {
+	display: grid;
+	grid-template-columns: 5fr 5fr 5fr;
+	/* Creates two columns of equal width */
+	align-items: center;
+	/* Vertically aligns the grid items */
+	gap: 35px;
+	/* Adds space between the columns */
+
 }
 
 .article {
