@@ -12,11 +12,9 @@ a {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: scroll;
-	/* or 'scroll' if you want it to scroll with the page */
+	height: 100vh;
+	/* Use '100vh' to cover at least the full height of the viewport */
 }
-
-/* Use '100vh' to cover at least the full height of the viewport */
 
 html,
 body {
@@ -152,13 +150,12 @@ footer {
 	font-weight: 700;
 }
 
-/* News-Page-CSS */
 .news-page {
-	background-color: #D2DACE;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    background-color: #D1E7DD;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .air-pollution-article {
@@ -168,51 +165,18 @@ footer {
     margin-bottom: 20px;
     width: 100%;
 	display: grid;
-	grid-template-columns: 2fr 8fr;
-	align-items: center;
-	gap: 35px;
-	margin-left: 50px;
-	margin-right: 30px;
-}
-
-.content-box-climate-changes {
-	max-width: 500px;
-	/* Adjust as needed */
-	margin: auto;
-	overflow: hidden;
-	background-color: white;
-	/* Ensures the image does not overflow the div */
-}
-
-.content-image-climate-changes {
-	width: 100%;
-	display: block;
-	/* Removes bottom margin/whitespace */
-}
-
-.text-content-climate-changes {
-	background: #f0f0f0;
-	/* Light grey background */
-	padding: 20px;
-}
-
-.text-content-climate-changes h1 {
-	color: #000;
-	font-size: 24px;
-	/* Adjust as needed */
-}
-
-.text-content-climate-changes p {
-	color: #333;
-	font-size: 16px;
-	/* Adjust as needed */
+ 	grid-template-columns: 2fr 8fr;
+ 	align-items: center;
+ 	gap: 35px;
+ 	margin-left: 50px;
+ 	margin-right: 30px;
 }
 
 .article-row {
-	display: flex;
-	justify-content: space-between;
-	gap: 20px;
-	width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
 }
 
 .article {
@@ -230,65 +194,42 @@ footer {
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
-	.article-row {
-		flex-direction: column;
-	}
-
-	.article {
-		width: 100%;
-		/* Full width on smaller screens */
-		margin-bottom: 20px;
-		/* Add space between articles */
-	}
+    .article-row {
+        flex-direction: column;
+    }
+    
+    .article {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add space between articles */
+    }
 }
 
-.article-info {
+.article-info{
 	color: #28A745;
 	font-family: "DM serif Text";
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 29px;
-	/* 161.111% */
+	line-height: 29px; /* 161.111% */
 }
 
-.article-content {
+.article-content{
 	color: #000;
 	font-family: Inter;
 	font-size: 15px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 20px;
-	/* 133.333% */
+	line-height: 20px; /* 133.333% */
 }
 
-.article-title {
+.article-title{
 	color: #000;
 	font-family: "DM serif Text";
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 32px;
-	/* 106.667% */
+	line-height: 32px; /* 106.667% */
 }
-
-.wave-news {
-	position: absolute;
-	bottom: 0;
-	overflow: hidden;
-	width: 100%;
-	transform: translateY(60%);
-}
-
-.wave-news svg {
-	width: 105%;
-	height: auto;
-	margin-left: -1%;
-	fill: #D2DACE;
-}
-
-/* News-Page-CSS */
-
 .Cupology {
 	color: var(--green-800, #0A3622);
 	font-family: BioRhyme;
@@ -398,36 +339,36 @@ footer {
 	border-radius: 5px;
 }
 
-/* cup selection */
-html,
-body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
+ /* cup selection */
+ html,
+ body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+ }
 
-.background {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -999;
-	width: 100%;
-	height: 100%;
-	background-image: url('/images/1.png');
-	background-size: cover;
-	background-position: center;
-}
+ .background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -999;
+   width: 100%;
+   height: 100%;
+   background-image: url('/images/1.png');
+   background-size: cover;
+   background-position: center;
+ }
 
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -998;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
-}
+ .overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -998;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+ }
 
 .center-Reset {
 	position: fixed;
@@ -444,16 +385,16 @@ body {
 	cursor: pointer;
 }
 
-.center-text {
-	position: fixed;
-	top: 15%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	font-size: 3rem;
-	font-weight: bold;
-	color: #000;
-}
+ .center-text {
+   position: fixed;
+   top: 15%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 3rem;
+   font-weight: bold;
+   color: #000;
+ }
 
  .center-button {
    position: fixed;
@@ -470,20 +411,14 @@ body {
    cursor: pointer;
  }
 
-.image-container {
-	text-align: center;
-	margin-top: 10%;
-}
+ .image-container {
+   text-align: center;
+   margin-top: 10%;
+ }
 
-.image-container img {
-	max-width: 100%;
-	max-height: 400px;
-}
+ .image-container img {
+   max-width: 100%;
+   max-height: 400px;
+ }
 
-.cup-selection {
-	background-image: url('/images/1.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-}
+ /* cup selection */
