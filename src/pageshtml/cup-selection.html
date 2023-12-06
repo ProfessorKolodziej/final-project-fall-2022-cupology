@@ -1,93 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>背景图片页面</title>
-  <link rel="stylesheet" href="./static/css/index.css">
+  <title>cup-selection</title>
+  <link rel="stylesheet" type="text/css" href="/css/style.css" />
   <style>
-    /* 设置页面样式 */
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
-
-    .background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -999;
-      width: 100%;
-      height: 100%;
-      background-image: url('/images/1.png');
-      background-size: cover;
-      background-position: center;
-    }
-
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -998;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    .center-Reset {
-      position: fixed;
-      top: 10%;
-      right: 5%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font-size: 1rem;
-      /* font-weight: bold; */
-      color: #ffffff;
-      background-color: #122603;
-      padding: 10px 20px 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .center-text {
-      position: fixed;
-      top: 15%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font-size: 3rem;
-      font-weight: bold;
-      color: #000;
-    }
-
-    .center-button {
-      position: fixed;
-      top: 90%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font-size: 1.5rem;
-      /* font-weight: bold; */
-      color: #ffffff;
-      background-color: #122603;
-      padding: 10px 20px 10px 20px;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    /* 设置页面样式 */
-    .image-container {
-      text-align: center;
-      margin-top: 10%;
-    }
-
-    .image-container img {
-      max-width: 100%;
-      max-height: 400px;
-    }
+   
   </style>
 </head>
 
@@ -134,7 +53,7 @@
     <div class="center-text" style="color: rgb(64, 64, 64);">What color do you want?</div>
     <div>
       <div class="image-container">
-        <img id="displayed-image2" src="./static/img/w1.png" alt="显示的图片">
+        <img id="displayed-image2" src="/images/w1.png">
       </div>
       <div>
         <div onclick="prevImage1()" style="position: absolute;top: 50%;left: 20%;"><img src="./static/img/left.png"
@@ -148,7 +67,7 @@
       Back
     </div>
     <div class="center-button" onclick="ok2()" style="left: 60%;">
-      Looks Good！Next
+      Looks Good! Next
     </div>
   </div>
 
@@ -159,7 +78,7 @@
     <div style="display: flex;justify-content: center;">
       <div class="image-container" style="background-color: #ffffff;display: flex;margin-top: 15%;border-radius: 8px;">
         <div>
-          <img class="displayed-image3" src="/imgages/w1.png">
+          <img class="displayed-image3" src="/images/w1.png">
         </div>
         <div style="padding: 4%;">
           <h3>Great choice!</h3>
@@ -175,157 +94,8 @@
 
 
   </div>
+
+  <script src="js/script.js"></script>
 </body>
-
-<script>
-
-  let imageIndex = 1;
-  const totalImages = 3;
-
-  const displayedImage = document.getElementById('displayed-image');
-
-  function prevImage() {
-    if (imageIndex - 1 > 0) {
-      imageIndex = imageIndex - 1
-    } else if (imageIndex - 1 <= 0) {
-      imageIndex = 3
-    }
-    displayedImage.src = `./static/img/w${imageIndex}.png`;
-    logImageIndex();
-  }
-
-  function nextImage() {
-    imageIndex = (imageIndex % totalImages) + 1;
-    displayedImage.src = `./static/img/w${imageIndex}.png`;
-
-    logImageIndex();
-  }
-
-  function logImageIndex() {
-    console.log(`当前图片索引：${imageIndex}`);
-  }
-
-  var imageIndex1 = 1;
-  function ok1() {
-    // 获取元素  
-    var element1 = document.getElementById("one");
-    // 设置display属性为none  
-    element1.style.display = "none";
-    var element2 = document.getElementById("two");
-    // 设置display属性为none  
-    element2.style.display = "block";
-    const displayedImage2 = document.getElementById('displayed-image2');
-    if (imageIndex == 1) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    } else if (imageIndex == 2) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    } else if (imageIndex == 3) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    }
-  }
-
-  function prevImage1() {
-    const displayedImage2 = document.getElementById('displayed-image2');
-    if (imageIndex1 - 1 > 0) {
-      imageIndex1 = imageIndex1 - 1
-    } else if (imageIndex1 - 1 <= 0) {
-      imageIndex1 = 3
-    }
-    if (imageIndex == 1) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    } else if (imageIndex == 2) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    } else if (imageIndex == 3) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    }
-
-  }
-
-  function nextImage1() {
-    const displayedImage2 = document.getElementById('displayed-image2');
-    imageIndex1 = (imageIndex1 % totalImages) + 1;
-
-    if (imageIndex == 1) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    } else if (imageIndex == 2) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    } else if (imageIndex == 3) {
-      displayedImage2.src = `./static/img/${imageIndex}${imageIndex1}.png`;
-    }
-  }
-
-  function back() {
-    // 获取元素  
-    var element1 = document.getElementById("one");
-    // 设置display属性为none  
-    element1.style.display = "block";
-    var element2 = document.getElementById("two");
-    // 设置display属性为none  
-    element2.style.display = "none";
-
-    var backgroundment = document.getElementsByClassName('background');
-    backgroundment[0].style.backgroundImage = "url('./static/img/1.jfif')";
-    // 修改类名为"overlay"的元素的背景颜色  
-    var overlays = document.getElementsByClassName('overlay');
-    for (var i = 0; i < overlays.length; i++) {
-      overlays[i].style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
-    }
-  }
-
-  function ok2() {
-    // 修改body的背景图片  
-    var backgroundment = document.getElementsByClassName('background');
-    backgroundment[0].style.backgroundImage = "url('./static/img/2.jfif')";
-
-    // 修改类名为"overlay"的元素的背景颜色  
-    var overlays = document.getElementsByClassName('overlay');
-    for (var i = 0; i < overlays.length; i++) {
-      overlays[i].style.backgroundColor = 'rgb(163 163 163 / 47%)';
-    }
-    // 获取元素  
-    var element2 = document.getElementById("two");
-    // 设置display属性为none  
-    element2.style.display = "none";
-    var element3 = document.getElementById("three");
-    // 设置display属性为none  
-    element3.style.display = "block";
-
-    const displayedImage3 = document.getElementById('displayed-image3');
-    if (imageIndex == 1) {
-      displayedImage3.src = `./static/img/${imageIndex}${imageIndex1}a.png`;
-    } else if (imageIndex == 2) {
-      displayedImage3.src = `./static/img/${imageIndex}${imageIndex1}a.png`;
-    } else if (imageIndex == 3) {
-      displayedImage3.src = `./static/img/${imageIndex}${imageIndex1}a.png`;
-    }
-  }
-
-  function Reset() {
-    // 弹出确认框  
-    // var result = confirm("您确定要继续吗？");  
-    document.getElementById("confirmationModal").style.display = "block";
-
-  }
-
-  function queConfirmation() {
-    location.reload();
-  }
-  function closeConfirmation() {
-    document.getElementById("confirmationModal").style.display = "none";
-  }
-
-  function order() {
-    document.getElementById("three").style.display = "none";
-    // 修改body的背景图片  
-    var backgroundment = document.getElementsByClassName('background');
-    backgroundment[0].style.backgroundImage = "url('./static/img/thank.png')";
-
-    // 修改类名为"overlay"的元素的背景颜色  
-    var overlays = document.getElementsByClassName('overlay');
-    for (var i = 0; i < overlays.length; i++) {
-      overlays[i].style.backgroundColor = 'rgb(0 0 0 / 0%)';
-    }
-  }
-</script>
 
 </html>
