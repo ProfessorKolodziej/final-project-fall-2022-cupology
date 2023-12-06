@@ -1,7 +1,9 @@
 a {
 	text-decoration: none;
+
 	/* This removes the underline */
 	color: inherit;
+
 	/* This makes the link color the same as the parent element, or you can set a specific color */
 }
 
@@ -10,24 +12,21 @@ a {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: scroll;
-	/* or 'scroll' if you want it to scroll with the page */
+	height: 100vh;
+	/* Use '100vh' to cover at least the full height of the viewport */
 }
-
-/* Use '100vh' to cover at least the full height of the viewport */
 
 html,
 body {
 	margin: 0;
 	padding: 0;
 	background-color: #D2DACE;
-	/* Other styles */
 }
 
 
 .text-content {
 	color: var(--gray-900, #0A3622);
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 25px;
 	font-style: normal;
 	font-weight: 400;
@@ -37,7 +36,6 @@ body {
 .sustainu {
 	color: var(--green-800, #0A3622);
 	font-family: BioRhyme;
-	font-size: 80px;
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
@@ -52,7 +50,7 @@ body {
 	line-height: 30px;
 	justify-content: center;
 	margin-top: -90px;
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	letter-spacing: 1.2px;
 	font-style: normal;
 }
@@ -99,20 +97,15 @@ nav {
 .grid-container {
 	display: grid;
 	grid-template-columns: 7fr 4fr;
-	/* Creates two columns of equal width */
 	align-items: center;
-	/* Vertically aligns the grid items */
 	gap: 35px;
-	/* Adds space between the columns */
 	margin-left: 50px;
 	margin-right: 30px;
 }
 
 .image-content img {
 	width: 100%;
-	/* Ensures the image is responsive and fills its container */
 	height: auto;
-	/* Maintains the aspect ratio of the image */
 }
 
 /* Styles for drive and approach sections */
@@ -121,31 +114,26 @@ nav {
 	margin-left: 50px;
 	margin-right: 20px;
 	color: #000;
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 30px;
 	margin-bottom: 30px;
 	letter-spacing: 0.5px;
-	/* 166.667% */
 }
 
 .drive h2,
 .approach h2 {
 	font-size: 35px;
-	/* Size of section headings */
 	color: #0A3622;
-	/* Color of section headings */
 	margin-bottom: 30px;
 }
 
 /* Footer and contact button styles */
 footer {
 	background-color: #D2DACE;
-	/* Footer background */
 	color: #fff;
-	/* Footer text color */
 	text-align: center;
 	padding: 20px 0;
 	margin-top: 50px;
@@ -154,40 +142,34 @@ footer {
 .contact-button-about-us {
 	display: inline-block;
 	background-color: #06281E;
-	/* Button color */
 	color: #fff;
 	padding: 10px 20px;
 	border-radius: 20px;
 	transition: background-color 0.3s ease;
 	text-decoration: none;
-	/* Remove underline from links */
 	font-weight: 700;
-
-	/* Bold font for button text */
 }
 
-/* News-Page-CSS */
 .news-page {
-	background-color: #D2DACE;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+    background-color: #D1E7DD;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .air-pollution-article {
-	background-color: #ffffff;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	padding: 20px;
-	margin-bottom: 20px;
-	width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
 	display: grid;
-	grid-template-columns: 2fr 8fr;
-	align-items: center;
-	gap: 35px;
-	margin-left: 50px;
-	margin-right: 30px;
+ 	grid-template-columns: 2fr 8fr;
+ 	align-items: center;
+ 	gap: 35px;
+ 	margin-left: 50px;
+ 	margin-right: 30px;
 }
 
 /* climate changes */
@@ -296,10 +278,9 @@ footer {
 }
 
 .article {
-	background-color: #ffffff;
+	background-color: #fff;
 	/* Set a white background for all articles */
 	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	padding: 20px;
 	/* Consistent padding for visual grouping */
 	margin-bottom: 20px;
@@ -311,65 +292,42 @@ footer {
 
 /* Responsive layout for smaller screens */
 @media (max-width: 768px) {
-	.article-row {
-		flex-direction: column;
-	}
-
-	.article {
-		width: 100%;
-		/* Full width on smaller screens */
-		margin-bottom: 20px;
-		/* Add space between articles */
-	}
+    .article-row {
+        flex-direction: column;
+    }
+    
+    .article {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add space between articles */
+    }
 }
 
-.article-info {
+.article-info{
 	color: #28A745;
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 18px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 29px;
-	/* 161.111% */
+	line-height: 29px; /* 161.111% */
 }
 
-.article-content {
+.article-content{
 	color: #000;
 	font-family: Inter;
 	font-size: 15px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 20px;
-	/* 133.333% */
+	line-height: 20px; /* 133.333% */
 }
 
-.article-title {
+.article-title{
 	color: #000;
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
-	line-height: 32px;
-	/* 106.667% */
+	line-height: 32px; /* 106.667% */
 }
-
-.wave-news {
-	position: absolute;
-	bottom: 0;
-	overflow: hidden;
-	width: 100%;
-	transform: translateY(60%);
-}
-
-.wave-news svg {
-	width: 105%;
-	height: auto;
-	margin-left: -1%;
-	fill: #D2DACE;
-}
-
-/* News-Page-CSS */
-
 .Cupology {
 	color: var(--green-800, #0A3622);
 	font-family: BioRhyme;
@@ -383,7 +341,7 @@ footer {
 }
 
 .slogan {
-	font-family: DM Serif Text;
+	font-family: "DM serif Text";
 	font-size: 30px;
 	font-style: normal;
 	font-weight: 400;
@@ -398,11 +356,8 @@ footer {
 	padding: 10px 20px;
 	margin: 5px;
 	text-decoration: none;
-	/* Remove underline from links */
 	color: white;
-	/* Button text color */
 	background-color: #06281E;
-	/* Green background */
 	transition: background-color 0.3s ease;
 	border-radius: 20px;
 	position: absolute;
@@ -482,36 +437,36 @@ footer {
 	border-radius: 5px;
 }
 
-/* cup selection */
-html,
-body {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-}
+ /* cup selection */
+ html,
+ body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+ }
 
-.background {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -999;
-	width: 100%;
-	height: 100%;
-	background-image: url('/images/1.png');
-	background-size: cover;
-	background-position: center;
-}
+ .background {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -999;
+   width: 100%;
+   height: 100%;
+   background-image: url('/images/1.png');
+   background-size: cover;
+   background-position: center;
+ }
 
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: -998;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.3);
-}
+ .overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: -998;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+ }
 
 .center-Reset {
 	position: fixed;
@@ -521,53 +476,47 @@ body {
 	text-align: center;
 	font-size: 1rem;
 	/* font-weight: bold; */
-	color: #ffffff;
+	color: #fff;
 	background-color: #122603;
-	padding: 10px 20px 10px 20px;
+	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
 }
 
-.center-text {
-	position: fixed;
-	top: 15%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	font-size: 3rem;
-	font-weight: bold;
-	color: #000;
-}
+ .center-text {
+   position: fixed;
+   top: 15%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 3rem;
+   font-weight: bold;
+   color: #000;
+ }
 
-.center-button {
-	position: fixed;
-	top: 90%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align: center;
-	font-size: 1.5rem;
-	/* font-weight: bold; */
-	color: #ffffff;
-	background-color: #122603;
-	padding: 10px 20px 10px 20px;
-	border-radius: 5px;
-	cursor: pointer;
-}
+ .center-button {
+   position: fixed;
+   top: 90%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   font-size: 1.5rem;
+   /* font-weight: bold; */
+   color: #fff;
+   background-color: #122603;
+   padding: 10px 20px;
+   border-radius: 5px;
+   cursor: pointer;
+ }
 
-.image-container {
-	text-align: center;
-	margin-top: 10%;
-}
+ .image-container {
+   text-align: center;
+   margin-top: 10%;
+ }
 
-.image-container img {
-	max-width: 100%;
-	max-height: 400px;
-}
+ .image-container img {
+   max-width: 100%;
+   max-height: 400px;
+ }
 
-.cup-selection {
-	background-image: url('/images/1.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-}
+ /* cup selection */
