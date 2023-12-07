@@ -35,7 +35,7 @@ a {
 }
 
 .intro-p {
-	color: var(--gray-900, #212529);
+	color: var(--gray-900, #0A3622);
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
@@ -69,7 +69,7 @@ a {
 }
 
 .wave-transparent svg {
-	fill: black;
+	fill: #0e1e25;
 	transform: scaleX(-1) scaleY(-1);
 }
 
@@ -97,6 +97,10 @@ nav {
 .image-content img {
 	width: 100%;
 	height: auto;
+}
+
+.about-background{
+	background-color: #D2DACE;
 }
 
 /* Styles for drive and approach sections */
