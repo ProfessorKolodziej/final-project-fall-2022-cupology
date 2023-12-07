@@ -17,6 +17,7 @@ function prevImage() {
   } else if (imageIndex - 1 <= 0) {
     imageIndex = 3
   }
+
   displayedImage.src = `/images/w${imageIndex}.png`;
   logImageIndex();
 }
@@ -24,8 +25,15 @@ function prevImage() {
 function nextImage() {
   imageIndex = (imageIndex % totalImages) + 1;
   displayedImage.src = `/images/w${imageIndex}.png`;
+  console.log("nextfunction")
+}
 
-  logImageIndex();
+const nextbutton =
+  document.querySelector(".next-image");
+console.log(nextbutton)
+if (nextbutton !== "undefined") {
+  nextbutton.addEventListener('click', nextImage);
+  console.log(nextbutton)
 }
 
 function logImageIndex() {
@@ -153,10 +161,3 @@ function order() {
     overlays[i].style.backgroundColor = 'rgb(0 0 0 / 0%)';
   }
 }
-
-function nextImage() {
-  // your code here
-}
-
-const nextBtn = document.querySelector('#nextBtn');
-nextBtn.addEventListener('click', nextImage);

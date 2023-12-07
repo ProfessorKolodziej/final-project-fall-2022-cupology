@@ -43,13 +43,15 @@
 
     <div>
       <div class="image-container">
-        <img class="displayed-image" src="/images/w1.png">
+        <img id="displayed-image" src="/images/w1.png">
       </div>
       <div>
-        <div onclick="prevImage()" style="position: absolute;top: 50%;left: 20%;"><img src="/images/left.png"
-            style="width: 50px;cursor: pointer;"></div>
-        <div onclick="nextImage()" style="position: absolute;top: 50%;right: 20%;"><img src="/images/right.png"
-            style="width: 50px;cursor: pointer;"></div>
+        <button type="button" class="previous-image"> 
+          <img src="/images/left.png">
+        </button>
+        <button type="button" class="next-image" >
+          <img src="/images/right.png">
+        </button>
       </div>
     </div>
 
@@ -106,7 +108,7 @@
 
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

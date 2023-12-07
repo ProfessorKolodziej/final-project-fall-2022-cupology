@@ -35,7 +35,7 @@ a {
 }
 
 .intro-p {
-	color: var(--gray-900, #212529);
+	color: var(--gray-900, #0A3622);
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 30px;
@@ -47,10 +47,15 @@ a {
 }
 
 
+.header-home {
+	position: relative;
+	height: 120px;
+}
+
 .header {
 	position: relative;
 	height: 120px;
-	background-color: #0e1e25;
+	background-color: #0A3622;
 }
 
 .wave {
@@ -68,9 +73,10 @@ a {
 	fill: #D2DACE;
 }
 
-.wave-transparent svg {
-	fill: black;
+.wave-transparent {
+	fill: #0e1e25;
 	transform: scaleX(-1) scaleY(-1);
+	position: absolute;
 }
 
 
@@ -82,6 +88,7 @@ nav {
 	justify-content: center;
 	gap: 20px;
 	padding: 0 20px;
+	position: relative;
 }
 
 /* Main content styles */
@@ -97,6 +104,10 @@ nav {
 .image-content img {
 	width: 100%;
 	height: auto;
+}
+
+.about-background{
+	background-color: #D2DACE;
 }
 
 /* Styles for drive and approach sections */
@@ -122,12 +133,12 @@ nav {
 }
 
 /* Footer and contact button styles */
-footer {
+.footer {
 	background-color: #D2DACE;
 	color: #fff;
 	text-align: center;
 	padding: 20px 0;
-	margin-top: 50px;
+	margin-top: 50px;.
 }
 
 .contact-button-about-us {
@@ -501,3 +512,14 @@ body {
 }
 
 /* cup selection */
+.previous-image{
+	position: absolute;
+	top: 50%;
+	left: 20%;
+}
+
+.next-image{
+	position: absolute;
+	top: 50%;
+	right: 20%;
+}
