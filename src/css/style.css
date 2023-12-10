@@ -49,7 +49,7 @@ a {
 
 .header-home {
 	position: relative;
-	height: 120px;
+	height: 100px;
 }
 
 .header {
@@ -74,9 +74,24 @@ a {
 }
 
 .wave-transparent {
-	fill: #0e1e25;
+	fill: #0A3622;
 	transform: scaleX(-1) scaleY(-1);
 	position: absolute;
+}
+
+.wave-news {
+	position: absolute;
+	bottom: 0;
+	overflow: hidden;
+	width: 100%;
+	transform: translateY(60%);
+}
+
+.wave-news svg {
+	width: 105%;
+	height: auto;
+	margin-left: -1%;
+	fill: #D2DACE;
 }
 
 
@@ -106,7 +121,7 @@ nav {
 	height: auto;
 }
 
-.about-background{
+.about-background {
 	background-color: #D2DACE;
 }
 
@@ -138,7 +153,8 @@ nav {
 	color: #fff;
 	text-align: center;
 	padding: 20px 0;
-	margin-top: 50px;.
+	margin-top: 50px;
+	.
 }
 
 .contact-button-about-us {
@@ -153,7 +169,7 @@ nav {
 }
 
 .news-page {
-	background-color: #D1E7DD;
+	background-color: #D2DACE;
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
@@ -285,16 +301,16 @@ nav {
 }
 
 /* Responsive layout for smaller screens */
-@media (width <= 768px) {
+@media (width <=768px) {
 	.article-row {
-	  flex-direction: column;
+		flex-direction: column;
 	}
-  
+
 	.article {
-	  width: 100%;
-	  margin-bottom: 20px;
+		width: 100%;
+		margin-bottom: 20px;
 	}
-  }
+}
 
 .article-info {
 	color: #28A745;
@@ -512,13 +528,13 @@ body {
 }
 
 /* cup selection */
-.previous-image{
+.previous-image {
 	position: absolute;
 	top: 50%;
 	left: 20%;
 }
 
-.next-image{
+.next-image {
 	position: absolute;
 	top: 50%;
 	right: 20%;
