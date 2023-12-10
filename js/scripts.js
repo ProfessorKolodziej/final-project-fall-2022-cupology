@@ -22,18 +22,26 @@ function prevImage() {
   logImageIndex();
 }
 
+const preButton =
+  document.querySelector(".previous-image");
+console.log(preButton)
+if (preButton !== "undefined") {
+  preButton.addEventListener('click', prevImage);
+  console.log(preButton)
+}
+
 function nextImage() {
   imageIndex = (imageIndex % totalImages) + 1;
   displayedImage.src = `/images/w${imageIndex}.png`;
   console.log("nextfunction")
 }
 
-const nextbutton =
+const nextButton =
   document.querySelector(".next-image");
-console.log(nextbutton)
-if (nextbutton !== "undefined") {
-  nextbutton.addEventListener('click', nextImage);
-  console.log(nextbutton)
+console.log(nextButton)
+if (nextButton !== "undefined") {
+  nextButton.addEventListener('click', nextImage);
+  console.log(nextButton)
 }
 
 function logImageIndex() {
@@ -87,6 +95,14 @@ function nextImage1() {
   } else if (imageIndex == 3) {
     displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
   }
+}
+
+const nextColorBtn =
+  document.querySelector(".next-image-color");
+console.log(nextColor)
+if (nextColor !== "undefined") {
+  nextbutton.addEventListener('click', nextImage1);
+  console.log(nextColor)
 }
 
 function back() {
