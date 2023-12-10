@@ -532,10 +532,45 @@ body {
 	position: absolute;
 	top: 50%;
 	left: 20%;
+	background-color: transparent;
 }
 
 .next-image {
 	position: absolute;
 	top: 50%;
 	right: 20%;
+	background-color: transparent;
+}
+
+#two {
+	display: none;
+}
+
+.center-text {
+	color: rgb(64, 64, 64);
+}
+
+.image-container img,
+#prevBtn img,
+#nextImageTrigger img {
+	cursor: pointer;
+}
+
+#prevBtn,
+#nextImageTrigger {
+	position: absolute;
+	top: 50%;
+}
+
+#prevBtn {
+	left: 20%;
+}
+
+#nextImageTrigger {
+	right: 20%;
+}
+
+#prevBtn img,
+#nextImageTrigger img {
+	width: 50px;
 }
