@@ -7,6 +7,7 @@ a {
 	/* This makes the link color the same as the parent element, or you can set a specific color */
 }
 
+/*style for index.html*/
 .home-page {
 	background-image: url('/images/home-background.png');
 	background-size: cover;
@@ -15,6 +16,45 @@ a {
 	height: 100vh;
 }
 
+.header-home {
+	position: relative;
+	height: 100px;
+	top: -2.5%;
+}
+
+.header {
+	position: relative;
+	height: 120px;
+	background-color: #0A3622;
+}
+
+.slogan {
+	font-family: "DM serif Text", serif;
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 40px;
+	position: absolute;
+	top: 45%;
+	left: 47%;
+}
+
+.button-get-started {
+	display: inline-block;
+	padding: 14px 48px;
+	margin: 5px;
+	border-radius: 7px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	position: absolute;
+	font-size: 32px;
+	top: 80%;
+	left: 47%;
+}
+
+/* style for about.html */
 .text-content {
 	color: var(--gray-900, #0A3622);
 	font-family: "DM Serif Text", serif;
@@ -44,18 +84,6 @@ a {
 	font-family: "DM serif Text", serif;
 	letter-spacing: 1.2px;
 	font-style: normal;
-}
-
-
-.header-home {
-	position: relative;
-	height: 100px;
-}
-
-.header {
-	position: relative;
-	height: 120px;
-	background-color: #0A3622;
 }
 
 .wave {
@@ -351,17 +379,6 @@ nav {
 	left: 46%;
 }
 
-.slogan {
-	font-family: "DM serif Text", serif;
-	font-size: 30px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 48px;
-	position: absolute;
-	top: 37%;
-	left: 47%;
-}
-
 .button-contact {
 	display: inline-block;
 	padding: 10px 20px;
@@ -375,21 +392,6 @@ nav {
 	top: 90%;
 	left: 3%;
 	font-size: 18px;
-}
-
-.button-get-started {
-	display: inline-block;
-	padding: 14px 48px;
-	margin: 5px;
-	border-radius: 7px;
-	text-decoration: none;
-	color: white;
-	background-color: #06281E;
-	transition: background-color 0.3s ease;
-	position: absolute;
-	font-size: 32px;
-	top: 63%;
-	left: 47%;
 }
 
 .modal {
