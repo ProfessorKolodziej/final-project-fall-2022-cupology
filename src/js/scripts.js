@@ -5,37 +5,56 @@
 // - Do not use onclick - use addEventListener instead
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
+// Mug type gallery variables and functions
+let currentMugImageIndex = 1;
+const totalMugImages = 3; // Assuming you have 3 mug images
 
-let imageIndex = 1;
-const totalImages = 3;
+const displayedMugImage = document.getElementById('displayed-image');
+const previousMugButton = document.querySelector('.previous-image');
+const nextMugButton = document.querySelector('.next-image');
 
-const displayedImage = document.getElementById('displayed-image');
-const previousButton = document.querySelector('.previous-image');
-const nextButton = document.querySelector('.next-image');
+function changeMugImage(change) {
+  currentMugImageIndex += change;
 
-let currentImageIndex = 1;
+  if (currentMugImageIndex < 1) {
+    currentMugImageIndex = totalMugImages;
+  } else if (currentMugImageIndex > totalMugImages) {
+    currentMugImageIndex = 1;
+  }
 
-function getTotalImages() {
-    return 3; // Replace this with your dynamic method to fetch the total number
+  displayedMugImage.src = `images/w${currentMugImageIndex}.png`;
 }
 
-function changeImage(change) {
-    const totalImages = getTotalImages();
-    currentImageIndex += change;
-    console.log("change is ", change)
-    if (currentImageIndex < 1) {
-        currentImageIndex = totalImages;
-    } else if (currentImageIndex > totalImages) {
-        currentImageIndex = 1;
-    }
-    console.log("Image index is ", currentImageIndex)
-    displayedImage.src = `images/w${currentImageIndex}.png`;
-    console.log("displayedImage.src is ", displayedImage.src)
+// Event listeners for the mug type gallery buttons
+previousMugButton.addEventListener('click', () => changeMugImage(-1));
+nextMugButton.addEventListener('click', () => changeMugImage(1));
+
+// Color gallery variables and functions
+let currentColorImageIndex = 1; // This starts at 1
+const colorNames = ['white', 'yellow', 'orange']; // Assuming you have 3 color images
+
+const displayedColorImage = document.getElementById('displayed-image-2');
+const previousColorButton = document.querySelector('.previous-image-color');
+const nextColorButton = document.querySelector('.next-image-color');
+
+function changeColorImage(change) {
+  currentColorImageIndex += change;
+
+  if (currentColorImageIndex < 1) {
+    currentColorImageIndex = colorNames.length;
+  } else if (currentColorImageIndex > colorNames.length) {
+    currentColorImageIndex = 1;
+  }
+
+  const colorName = colorNames[currentColorImageIndex - 1]; // Arrays are 0-indexed
+  displayedColorImage.src = `images/w1-${colorName}.png`;
 }
 
-// Add event listeners to the buttons
-previousButton.addEventListener('click', () => changeImage(1));
-nextButton.addEventListener('click', () => changeImage(1));
+// Event listeners for the color gallery buttons
+previousColorButton.addEventListener('click', () => changeColorImage(-1));
+nextColorButton.addEventListener('click', () => changeColorImage(1));
+
+
 
 
 // function prevImage() {
@@ -78,6 +97,7 @@ if (looksgoodButton1 !== "undefined") {
   looksgoodButton1.addEventListener('click', ok1);
   console.log(looksgoodButton1)
 }
+
 
 function logImageIndex() {
   console.log(`search-image：${imageIndex}`);

@@ -619,6 +619,20 @@ body {
 	background-color: transparent;
 }
 
+.previous-image-color {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	background-color: transparent;
+}
+
+.next-image-color {
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	background-color: transparent;
+}
+
 #two {
 	display: none;
 	flex-direction: column;
@@ -718,11 +732,11 @@ body {
 	position: absolute;
 	top: 0;
 	bottom: auto;
-	height:100%;
+	height: 100%;
 }
 
-.wave-transparent svg{
-	height:100%;
+.wave-transparent svg {
+	height: 100%;
 }
 
 .cupology {
@@ -762,4 +776,3 @@ body {
 	top: 80%;
 	left: 47%;
 }
-
