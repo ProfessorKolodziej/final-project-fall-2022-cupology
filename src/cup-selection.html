@@ -55,35 +55,56 @@
       </div>
     </div>
 
-    <div class="center-button" onclick="ok1()">
+    <div type="button" class="looksgood-button1">
       Looks Good!Next
     </div>
-  </div>
 
+  </div>
+  <!-- testing for two-->
   <div id="two">
-    <div class="center-text">What color do you want?</div>
-    
-    <div>
-      <div class="image-container">
-        <img id="displayed-image2" src="images/w1.png">
-      </div>
+    <div class="center-text">What Color Do You Want?</div>
+    <section id="color-checkboxes">
+      <label>
+        <input type="radio" name="color" value="white" />
+        White
+      </label>
+      <label>
+        <input type="radio" name="color" value="yellow" />
+        Yellow
+      </label>
+      <label>
+        <input type="radio" name="color" value="orange" />
+        Orange
+      </label>
+    </section>
+    <div id="js-color"></div>
+    <!--- test eneded for two-->
+
+
+    <div id="two">
+      <div class="center-text">What color do you want?</div>
+
       <div>
-        <button type="button" id="previous-image-color">
-          <img src="images/left.png">
-        </button>
-        <button type="button" id="next-image-color">
-          <img src="images/right.png">
-        </button>
+        <div class="image-container">
+          <img id="displayed-image2" src="images/w1.png">
+        </div>
+        <div>
+          <button type="button" id="previous-image-color">
+            <img src="images/left.png">
+          </button>
+          <button type="button" id="next-image-color">
+            <img src="images/right.png">
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="center-button" onclick="back()" style="left: 40%;">
-    Back
-  </div>
-  <div class="center-button" onclick="ok2()" style="left: 60%;">
-    Looks Good! Next
-  </div>
+    <div class="back-button2">
+      Back
+    </div>
+    <div class="looksgood-button2">
+      Looks Good! Next
+    </div>
   </div>
 
 

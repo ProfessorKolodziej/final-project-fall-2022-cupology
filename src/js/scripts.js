@@ -40,8 +40,16 @@ const nextButton =
   document.querySelector(".next-image");
 console.log(nextButton)
 if (nextButton !== "undefined") {
-  nextButton.addEventListener('click', nextImage);
+  nextButton.addEventListener('click', nextImage1);
   console.log(nextButton)
+}
+
+const looksgoodButton1 =
+  document.querySelector(".looksgood-button1");
+console.log(looksgoodButton1)
+if (looksgoodButton1 !== "undefined") {
+  looksgoodButton1.addEventListener('click', ok1);
+  console.log(looksgoodButton1)
 }
 
 function logImageIndex() {
@@ -97,7 +105,7 @@ function nextImage1() {
   }
 }
 
-const nextColorBtn =
+const nextColor =
   document.querySelector(".next-image-color");
 console.log(nextColor)
 if (nextColor !== "undefined") {
@@ -121,6 +129,14 @@ function back() {
   for (var i = 0; i < overlays.length; i++) {
     overlays[i].style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
   }
+}
+
+const backButton2 =
+  document.querySelector(".back-button2");
+console.log(backButton2);
+if (backButton2) {  // Checks if backButton2 is not null or undefined
+  backButton2.addEventListener('click', back);
+  console.log("Event listener added to backButton2");
 }
 
 function ok2() {
@@ -150,6 +166,13 @@ function ok2() {
     displayedImage3.src = `/images/${imageIndex}${imageIndex1}a.png`;
   }
 }
+const looksgoodButton2 =
+  document.querySelector(".looksgood-button2");
+console.log(looksgoodButton2)
+if (looksgoodButton2 !== "undefined") {
+  looksgoodButton1.addEventListener('click', ok2);
+  console.log(looksgoodButton2)
+}
 
 function Reset() {
   // get-confirmation-card  
@@ -177,3 +200,4 @@ function order() {
     overlays[i].style.backgroundColor = 'rgb(0 0 0 / 0%)';
   }
 }
+

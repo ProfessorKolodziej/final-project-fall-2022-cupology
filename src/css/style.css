@@ -54,6 +54,66 @@ a {
 	left: 47%;
 }
 
+/* style for contactus.html */
+html,
+contactus {
+	background-color: #D2DACE;
+}
+
+.contact-us-image {
+	width: 30%;
+	/* Set the width to 50% of the containing element */
+	height: auto;
+	position: absolute;
+	left: 32%;
+	/* Maintain the aspect ratio */
+}
+
+.contact-head {
+	color: var(--green-800, #0A3622);
+	font-family: BioRhyme, serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 72px;
+	margin-top: -100px;
+	text-align: center;
+}
+
+.contact-p {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	justify-content: center;
+	margin-top: -90px;
+	font-family: "DM serif Text", serif;
+	letter-spacing: 1.2px;
+	font-style: normal;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: justify;
+}
+
+.button-backtohome {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+	position: absolute;
+	top: 92%;
+	left: 42%;
+	font-size: 18px;
+}
+
+.email-link {
+	text-decoration: underline;
+}
+
 /* style for about.html */
 .text-content {
 	color: var(--gray-900, #0A3622);
@@ -182,18 +242,21 @@ nav {
 	text-align: center;
 	padding: 20px 0;
 	margin-top: 50px;
-	.
 }
 
-.contact-button-about-us {
+.button-contact-about {
 	display: inline-block;
-	background-color: #06281E;
-	color: #fff;
 	padding: 10px 20px;
-	border-radius: 20px;
-	transition: background-color 0.3s ease;
+	margin: 5px;
 	text-decoration: none;
-	font-weight: 700;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+	position: absolute;
+	top: 130%;
+	left: 45%;
+	font-size: 18px;
 }
 
 .news-page {
@@ -505,7 +568,7 @@ body {
 	color: #000;
 }
 
-.center-button {
+.back-button2 {
 	position: fixed;
 	top: 90%;
 	left: 50%;
@@ -517,6 +580,22 @@ body {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
+	left: 40%;
+}
+
+.looksgood-button2 {
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	left: 60%;
 }
 
 .image-container {
@@ -546,10 +625,51 @@ body {
 
 #two {
 	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+#color-checkboxes {
+	text-align: center;
+	font-size: 1.5em;
+	position: absolute;
+	top: 20%;
+	left: 34%;
+	/* Adjust size as needed */
+}
+
+#color-checkboxes input[type="radio"] {
+	transform: scale(1.5);
+	/* Enlarge the radio buttons */
+	margin: 10px 15px 10px 5px;
+	/* Provide some spacing around the buttons */
+}
+
+#color-checkboxes label {
+	margin: 0 20px;
+	/* Spacing between each label */
+	display: inline-block;
+	/* This helps maintain alignment and margin */
 }
 
 .center-text {
-	color: rgb(64, 64, 64);
+	color: black;
+}
+
+.looksgood-button1 {
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .image-container img,
