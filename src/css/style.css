@@ -7,7 +7,7 @@ a {
 	/* This makes the link color the same as the parent element, or you can set a specific color */
 }
 
-/*style for index.html*/
+/* style for index.html */
 .home-page {
 	background-image: url('/images/home-background.png');
 	background-size: cover;
@@ -16,26 +16,53 @@ a {
 	height: 100vh;
 }
 
+@media (width <=768px){
+	.header-home{
+	position: relative;
+	height: 120px;
+	background-color: #0A3622;
+	}
+
+	.wave-transparent {
+		fill: #0A3622;
+		transform: scaleX(-1) scaleY(-1);
+		position: absolute;
+	}
+}
+
+
 .header-home {
 	position: relative;
 	height: 100px;
 	top: -2.5%;
 }
 
-.header {
-	position: relative;
-	height: 120px;
-	background-color: #0A3622;
+.wave-transparent {
+	fill: #0A3622;
+	transform: scaleX(-1) scaleY(-1);
+	position: absolute;
+}
+
+.cupology {
+	color: var(--green-800, #0A3622);
+	font-family: BioRhyme, serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 50px;
+	position: absolute;
+	top: 8%;
+	left: 46%;
 }
 
 .slogan {
 	font-family: "DM serif Text", serif;
-	font-size: 30px;
+	font-size: 35px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: 350;
 	line-height: 40px;
 	position: absolute;
-	top: 45%;
+	top: 43%;
 	left: 47%;
 }
 
@@ -62,10 +89,12 @@ contactus {
 
 .contact-us-image {
 	width: 30%;
+
 	/* Set the width to 50% of the containing element */
 	height: auto;
 	position: absolute;
 	left: 32%;
+
 	/* Maintain the aspect ratio */
 }
 
@@ -115,6 +144,12 @@ contactus {
 }
 
 /* style for about.html */
+.header {
+	position: relative;
+	height: 120px;
+	background-color: #0A3622;
+}
+
 .text-content {
 	color: var(--gray-900, #0A3622);
 	font-family: "DM Serif Text", serif;
@@ -124,7 +159,7 @@ contactus {
 	line-height: 48px;
 }
 
-.sustainu {
+.sustain-intro {
 	color: var(--green-800, #0A3622);
 	font-family: BioRhyme, serif;
 	font-style: normal;
@@ -160,6 +195,97 @@ contactus {
 	margin-left: -1%;
 	fill: #D2DACE;
 }
+
+@media (width <=375px){
+	.header {
+		width: 150%;
+	}
+	.sustainu {
+		font-weight: 600;
+		font-size: 55px;
+		position: absolute;
+		top:8%;
+		left: 50%;
+	}
+	.intro-p{
+		display: flex;
+		width: 450px;
+		height: 110px;
+		font-size: 18.3px;
+		margin-top: 120px;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.image-content{
+		display: none;
+	}
+
+	.drive h2,
+	.approach h2 {
+		margin-bottom: 30px;
+}
+}
+/* Styles for drive and approach sections */
+.drive,
+.approach {
+	margin-left: 50px;
+	margin-right: 20px;
+	color: #000;
+	font-family: "DM serif Text", serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 30px;
+	letter-spacing: 0.5px;
+}
+
+.drive h2,
+.approach h2 {
+	font-size: 35px;
+	color: #0A3622;
+	margin-bottom: 30px;
+}
+
+/* Footer and contact button styles */
+.footer {
+	background-color: #D2DACE;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 50px;
+}
+
+.button-contact-about {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+	position: absolute;
+	top: 155%;
+	left: 45%;
+	font-size: 18px;
+}
+
+@media (width <=768px){
+	.button-contact-about {
+		top:97.5%;
+		left: 40%;
+	}
+}
+
+@media (width <=375px){
+	.button-contact-about {
+		position:absolute;
+		top: 212%;
+		left: 33%;
+	}
+}
+
 
 .wave-transparent {
 	fill: #0A3622;
@@ -207,56 +333,6 @@ nav {
 .image-content img {
 	width: 100%;
 	height: auto;
-}
-
-.about-background {
-	background-color: #D2DACE;
-}
-
-/* Styles for drive and approach sections */
-.drive,
-.approach {
-	margin-left: 50px;
-	margin-right: 20px;
-	color: #000;
-	font-family: "DM serif Text", serif;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 30px;
-	margin-bottom: 30px;
-	letter-spacing: 0.5px;
-}
-
-.drive h2,
-.approach h2 {
-	font-size: 35px;
-	color: #0A3622;
-	margin-bottom: 30px;
-}
-
-/* Footer and contact button styles */
-.footer {
-	background-color: #D2DACE;
-	color: #fff;
-	text-align: center;
-	padding: 20px 0;
-	margin-top: 50px;
-}
-
-.button-contact-about {
-	display: inline-block;
-	padding: 10px 20px;
-	margin: 5px;
-	text-decoration: none;
-	color: white;
-	background-color: #06281E;
-	transition: background-color 0.3s ease;
-	border-radius: 20px;
-	position: absolute;
-	top: 130%;
-	left: 45%;
-	font-size: 18px;
 }
 
 .news-page {
@@ -430,18 +506,6 @@ nav {
 	line-height: 32px;
 }
 
-.cupology {
-	color: var(--green-800, #0A3622);
-	font-family: BioRhyme, serif;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	font-size: 60px;
-	position: absolute;
-	top: 8%;
-	left: 46%;
-}
-
 .button-contact {
 	display: inline-block;
 	padding: 10px 20px;
@@ -571,7 +635,6 @@ body {
 .back-button2 {
 	position: fixed;
 	top: 90%;
-	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
@@ -586,7 +649,6 @@ body {
 .looksgood-button2 {
 	position: fixed;
 	top: 90%;
-	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
@@ -637,20 +699,25 @@ body {
 	position: absolute;
 	top: 20%;
 	left: 34%;
+
 	/* Adjust size as needed */
 }
 
 #color-checkboxes input[type="radio"] {
 	transform: scale(1.5);
+
 	/* Enlarge the radio buttons */
 	margin: 10px 15px 10px 5px;
+
 	/* Provide some spacing around the buttons */
 }
 
 #color-checkboxes label {
 	margin: 0 20px;
+
 	/* Spacing between each label */
 	display: inline-block;
+
 	/* This helps maintain alignment and margin */
 }
 
