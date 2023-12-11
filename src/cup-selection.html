@@ -27,7 +27,7 @@
       <p>Resetting this quiz will remove all your choices so far.</p>
       <div class="modal-buttons">
         <button type="button" class="close-button" onclick="closeConfirmation()">Close</button>
-        <button type="reset" class="reset-button" onclick="resetConfirmation()">Reset</button>
+        <a href="index.html" class="reset-button">Reset</a>
       </div>
     </div>
   </div>
@@ -56,7 +56,7 @@
     </div>
 
     <div type="button" class="looksgood-button1">
-      Looks Good!Next
+      Looks Good! Next!
     </div>
 
   </div>
@@ -84,7 +84,7 @@
     <div id="two">
       <div class="center-text">What color do you want?</div>
 
-      <div>
+      <!-- <div>
         <div class="image-container">
           <img id="displayed-image2" src="images/w1.png">
         </div>
@@ -97,7 +97,21 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <div>
+      <div class="image-container">
+          <img id="displayed-image" src="images/w1.png">
+      </div>
+      <div>
+          <button type="button" class="previous-image" onclick="changeImage(1)">
+              <img src="images/left.png" alt="Previous">
+          </button>
+          <button type="button" class="next-image" onclick="changeImage(1)">
+              <img src="images/right.png" alt="Next">
+          </button>
+      </div>
+  </div>
 
     <div class="back-button2">
       Back

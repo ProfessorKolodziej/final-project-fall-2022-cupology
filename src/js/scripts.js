@@ -10,25 +10,52 @@ let imageIndex = 1;
 const totalImages = 3;
 
 const displayedImage = document.getElementById('displayed-image');
+const previousButton = document.querySelector('.previous-image');
+const nextButton = document.querySelector('.next-image');
 
-function prevImage() {
-  if (imageIndex - 1 > 0) {
-    imageIndex = imageIndex - 1
-  } else if (imageIndex - 1 <= 0) {
-    imageIndex = 3
-  }
+let currentImageIndex = 1;
 
-  displayedImage.src = `/images/w${imageIndex}.png`;
-  logImageIndex();
+function getTotalImages() {
+    return 3; // Replace this with your dynamic method to fetch the total number
 }
 
-const preButton =
-  document.querySelector(".previous-image");
-console.log(preButton)
-if (preButton !== "undefined") {
-  preButton.addEventListener('click', prevImage);
-  console.log(preButton)
+function changeImage(change) {
+    const totalImages = getTotalImages();
+    currentImageIndex += change;
+    console.log("change is ", change)
+    if (currentImageIndex < 1) {
+        currentImageIndex = totalImages;
+    } else if (currentImageIndex > totalImages) {
+        currentImageIndex = 1;
+    }
+    console.log("Image index is ", currentImageIndex)
+    displayedImage.src = `images/w${currentImageIndex}.png`;
+    console.log("displayedImage.src is ", displayedImage.src)
 }
+
+// Add event listeners to the buttons
+previousButton.addEventListener('click', () => changeImage(1));
+nextButton.addEventListener('click', () => changeImage(1));
+
+
+// function prevImage() {
+//   if (imageIndex - 1 > 0) {
+//     imageIndex = imageIndex - 1
+//   } else if (imageIndex - 1 <= 0) {
+//     imageIndex = 3
+//   }
+
+//   displayedImage.src = `/images/w${imageIndex}.png`;
+//   logImageIndex();
+// }
+
+// const preButton =
+//   document.querySelector(".previous-image");
+// console.log(preButton)
+// if (preButton !== "undefined") {
+//   preButton.addEventListener('click', prevImage);
+//   console.log(preButton)
+// }
 
 function nextImage() {
   imageIndex = (imageIndex % totalImages) + 1;
@@ -36,13 +63,13 @@ function nextImage() {
   console.log("nextfunction")
 }
 
-const nextButton =
-  document.querySelector(".next-image");
-console.log(nextButton)
-if (nextButton !== "undefined") {
-  nextButton.addEventListener('click', nextImage1);
-  console.log(nextButton)
-}
+// const nextButton =
+//   document.querySelector(".next-image");
+// console.log(nextButton)
+// if (nextButton !== "undefined") {
+//   nextButton.addEventListener('click', nextImage1);
+//   console.log(nextButton)
+// }
 
 const looksgoodButton1 =
   document.querySelector(".looksgood-button1");
@@ -200,4 +227,6 @@ function order() {
     overlays[i].style.backgroundColor = 'rgb(0 0 0 / 0%)';
   }
 }
+
+
 
