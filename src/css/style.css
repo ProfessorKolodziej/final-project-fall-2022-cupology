@@ -7,80 +7,6 @@ a {
 	/* This makes the link color the same as the parent element, or you can set a specific color */
 }
 
-/* style for index.html */
-.home-page {
-	background-image: url('/images/home-background.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-}
-
-@media (width <=768px) {
-	.header-home {
-		position: relative;
-		height: 120px;
-		background-color: #0A3622;
-	}
-
-	.wave-transparent {
-		fill: #0A3622;
-		transform: scaleX(-1) scaleY(-1);
-		position: absolute;
-	}
-}
-
-
-.header-home {
-	position: relative;
-	height: 12.85%;
-	top: -3.43%;
-}
-
-.wave-transparent {
-	fill: #0A3622;
-	transform: scaleX(-1) scaleY(-1);
-	position: absolute;
-}
-
-.cupology {
-	color: var(--green-800, #0A3622);
-	font-family: BioRhyme, serif;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	font-size: 50px;
-	position: absolute;
-	top: 8%;
-	left: 46%;
-}
-
-.slogan {
-	font-family: "DM serif Text", serif;
-	font-size: 35px;
-	font-style: normal;
-	font-weight: 350;
-	line-height: 40px;
-	position: absolute;
-	top: 43%;
-	left: 47%;
-}
-
-.button-get-started {
-	display: inline-block;
-	padding: 14px 48px;
-	margin: 5px;
-	border-radius: 7px;
-	text-decoration: none;
-	color: white;
-	background-color: #06281E;
-	transition: background-color 0.3s ease;
-	position: absolute;
-	font-size: 32px;
-	top: 80%;
-	left: 47%;
-}
-
 /* style for contactus.html */
 html,
 contactus {
@@ -274,7 +200,6 @@ contactus {
 	background-color: #06281E;
 	transition: background-color 0.3s ease;
 	border-radius: 20px;
-	position: absolute;
 	top: 153%;
 	left: 45%;
 	font-size: 18px;
@@ -772,3 +697,69 @@ body {
 #nextImageTrigger img {
 	width: 50px;
 }
+
+/* style for index.html */
+.home-page {
+	background-image: url('/images/home-background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.header-home {
+	position: relative;
+	height: 12.85%;
+}
+
+.wave-transparent {
+	fill: #0A3622;
+	transform: scaleX(-1) scaleY(-1);
+	position: absolute;
+	top: 0;
+	bottom: auto;
+	height:100%;
+}
+
+.wave-transparent svg{
+	height:100%;
+}
+
+.cupology {
+	color: var(--green-800, #0A3622);
+	font-family: BioRhyme, serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 50px;
+	position: absolute;
+	top: 8%;
+	left: 46%;
+}
+
+.slogan {
+	font-family: "DM serif Text", serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 350;
+	line-height: 40px;
+	position: absolute;
+	top: 43%;
+	left: 47%;
+}
+
+.button-get-started {
+	display: inline-block;
+	padding: 14px 48px;
+	margin: 5px;
+	border-radius: 7px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	position: absolute;
+	font-size: 32px;
+	top: 80%;
+	left: 47%;
+}
+
