@@ -60,6 +60,59 @@ contactus {
 	background-color: #D2DACE;
 }
 
+.contact-us-image {
+	width: 30%;
+	/* Set the width to 50% of the containing element */
+	height: auto;
+	position: absolute;
+	left: 32%;
+	/* Maintain the aspect ratio */
+}
+
+.contact-head {
+	color: var(--green-800, #0A3622);
+	font-family: BioRhyme, serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 72px;
+	margin-top: -100px;
+	text-align: center;
+}
+
+.contact-p {
+	color: black;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	justify-content: center;
+	margin-top: -90px;
+	font-family: "DM serif Text", serif;
+	letter-spacing: 1.2px;
+	font-style: normal;
+	margin-left: 100px;
+	margin-right: 100px;
+	text-align: justify;
+}
+
+.button-backtohome {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+	position: absolute;
+	top: 92%;
+	left: 42%;
+	font-size: 18px;
+}
+
+
+
+
 
 /* style for about.html */
 .text-content {
