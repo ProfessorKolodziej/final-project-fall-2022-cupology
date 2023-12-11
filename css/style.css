@@ -110,9 +110,9 @@ contactus {
 	font-size: 18px;
 }
 
-
-
-
+.email-link {
+	text-decoration: underline;
+}
 
 /* style for about.html */
 .text-content {
@@ -568,7 +568,7 @@ body {
 	color: #000;
 }
 
-.center-button {
+.back-button2 {
 	position: fixed;
 	top: 90%;
 	left: 50%;
@@ -580,6 +580,22 @@ body {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
+	left: 40%;
+}
+
+.looksgood-button2 {
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	left: 60%;
 }
 
 .image-container {
@@ -609,10 +625,51 @@ body {
 
 #two {
 	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+#color-checkboxes {
+	text-align: center;
+	font-size: 1.5em;
+	position: absolute;
+	top: 20%;
+	left: 34%;
+	/* Adjust size as needed */
+}
+
+#color-checkboxes input[type="radio"] {
+	transform: scale(1.5);
+	/* Enlarge the radio buttons */
+	margin: 10px 15px 10px 5px;
+	/* Provide some spacing around the buttons */
+}
+
+#color-checkboxes label {
+	margin: 0 20px;
+	/* Spacing between each label */
+	display: inline-block;
+	/* This helps maintain alignment and margin */
 }
 
 .center-text {
-	color: rgb(64, 64, 64);
+	color: black;
+}
+
+.looksgood-button1 {
+	position: fixed;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .image-container img,

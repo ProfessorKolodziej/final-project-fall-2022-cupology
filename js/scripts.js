@@ -44,6 +44,14 @@ if (nextButton !== "undefined") {
   console.log(nextButton)
 }
 
+const looksgoodButton1 =
+  document.querySelector(".looksgood-button1");
+console.log(looksgoodButton1)
+if (looksgoodButton1 !== "undefined") {
+  looksgoodButton1.addEventListener('click', ok1);
+  console.log(looksgoodButton1)
+}
+
 function logImageIndex() {
   console.log(`search-image：${imageIndex}`);
 }
@@ -123,6 +131,14 @@ function back() {
   }
 }
 
+const backButton2 =
+  document.querySelector(".back-button2");
+console.log(backButton2)
+if (backButton2 !== "undefined") {
+  backButton2.addEventListener('click', back);
+  console.log(backButton2)
+}
+
 function ok2() {
   // body-image 
   var backgroundment = document.getElementsByClassName('background');
@@ -149,6 +165,13 @@ function ok2() {
   } else if (imageIndex == 3) {
     displayedImage3.src = `/images/${imageIndex}${imageIndex1}a.png`;
   }
+}
+const looksgoodButton2 =
+  document.querySelector(".looksgood-button2");
+console.log(looksgoodButton2)
+if (looksgoodButton2 !== "undefined") {
+  looksgoodButton1.addEventListener('click', ok2);
+  console.log(looksgoodButton2)
 }
 
 function Reset() {
@@ -177,3 +200,4 @@ function order() {
     overlays[i].style.backgroundColor = 'rgb(0 0 0 / 0%)';
   }
 }
+
