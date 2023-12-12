@@ -98,12 +98,6 @@ backButton.addEventListener('click', function () {
   showSection(sectionOne);
 });
 
-orderNow.addEventListener('click', function () {
-  hideSection(sectionThree);
-  // Assuming that you want to show the thank you image and it's wrapped in a section with an ID
-  showSection(sectionFour); // You should have a 'sectionFour' defined for this to work
-  displayedthankYouImage.src = `images/thank.png`; // This line ensures the correct image is set
-});
 
 
 
