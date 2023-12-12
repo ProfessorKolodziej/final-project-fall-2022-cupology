@@ -31,7 +31,6 @@ contactus {
 	font-weight: 700;
 	line-height: normal;
 	font-size: 60px;
-	margin-top: -100px;
 	text-align: center;
 }
 
@@ -41,13 +40,12 @@ contactus {
 	font-weight: 400;
 	line-height: 30px;
 	justify-content: center;
-	margin-top: -90px;
 	font-family: "DM serif Text", serif;
 	letter-spacing: 1.2px;
 	font-style: normal;
 	margin-left: 100px;
 	margin-right: 100px;
-	text-align: justify;
+	text-align: center;
 }
 
 .button-backtohome {
@@ -60,13 +58,58 @@ contactus {
 	transition: background-color 0.3s ease;
 	border-radius: 20px;
 	position: absolute;
-	top: 92%;
-	left: 42%;
+	top: 150%;
+	left: 38%;
 	font-size: 18px;
 }
 
 .email-link {
 	text-decoration: underline;
+}
+
+@media (width <=768px) {
+	.button-backtohome {
+		top: 100%;
+		left: 33%;
+	}
+
+	.contact-p {
+		font-size: 12px;
+		line-height: 20px;
+		margin-left: 50px;
+		margin-right: 50px;
+		text-align: center;
+	}
+
+	.contact-head {
+		font-size: 40px;
+	}
+
+	.contact-us-image {
+		top: 63%;
+	}
+}
+
+@media (width <=375px) {
+	.contact-head {
+		font-size: 30px;
+	}
+
+	.contact-p {
+		font-size: 12px;
+		line-height: 20px;
+		margin-left: 50px;
+		margin-right: 50px;
+		text-align: center;
+	}
+
+	.button-backtohome {
+		left: 28%;
+	}
+
+	.contact-us-image {
+		top: 63%;
+	}
 }
 
 /* style for about.html */
@@ -560,13 +603,15 @@ body {
 	cursor: pointer;
 }
 
+
 .center-text {
 	position: fixed;
 	top: 15%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	font-size: 55px;
+	font-size: 45px;
+	width: 100%;
 	font-weight: bold;
 	color: black;
 	font-family: BioRhyme, serif;
@@ -608,6 +653,24 @@ body {
 .image-container img {
 	max-width: 100%;
 	max-height: 400px;
+}
+
+/*media query for type selection*/
+@media (width <=768px) {
+	.center-text {
+		font-size: 25px;
+	}
+
+	.image-container {
+		margin-top: 30%;
+		max-height: 200px;
+	}
+}
+
+@media (width <=375px) {
+	.image-container {
+		margin-top: 50%;
+	}
 }
 
 /* cup selection */
@@ -692,6 +755,21 @@ body {
 #prevBtn img,
 #nextImageTrigger img {
 	width: 50px;
+}
+
+/*style for color selection*/
+@media (width <=768px) {
+	.looksgood-button2 {
+		top: 90%;
+		left: 70%;
+		width: 180px;
+		height: 28px;
+	}
+
+	.back-button2 {
+		top: 90%;
+		left: 30%;
+	}
 }
 
 /* style for index.html */
@@ -840,7 +918,7 @@ body {
 	color: black;
 }
 
-.order-now-button {
+.button-ordernow {
 	position: absolute;
 	top: 70%;
 	left: 50%;
@@ -861,4 +939,85 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
+}
+
+
+/* Adjust the background position */
+.thankyou-head {
+	color: var(--green-800, #0A3622);
+	font-family: BioRhyme, serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 60px;
+	text-align: center;
+
+	@media (width <=375px) {
+		font-size: 35px;
+	}
+}
+
+.thankyou-p {
+	color: var(--green-800, #0A3622);
+	font-family: BioRhyme, serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 30px;
+	text-align: center;
+
+	@media (width <=375px) {
+		font-size: 18px;
+	}
+}
+
+.button-backtohome-thankyou {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+	position: absolute;
+	top: 55%;
+	left: 55%;
+	font-size: 18px;
+
+	@media (width <=375px) {
+		top: 10%;
+		left: 30%;
+	}
+
+	@media (width <=768px) {
+		top: 60%;
+		left: 60%;
+	}
+
+}
+
+.button-start-new-design {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+	position: absolute;
+	top: 55%;
+	left: 30%;
+	font-size: 18px;
+
+	@media (width <=375px) {
+		top: 60%;
+		left: 26%;
+	}
+
+	@media (width <=768px) {
+		top: 60%;
+		left: 24%;
+	}
 }
