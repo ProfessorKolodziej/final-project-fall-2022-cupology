@@ -8,6 +8,7 @@ a {
 }
 
 /* style for contactus.html */
+/* style for contactus.html */
 html,
 contactus {
 	background-color: #D2DACE;
@@ -69,8 +70,8 @@ contactus {
 
 @media (width <=768px) {
 	.button-backtohome {
-		top: 100%;
-		left: 33%;
+		top: 78%;
+		left: 37%;
 	}
 
 	.contact-p {
@@ -86,7 +87,7 @@ contactus {
 	}
 
 	.contact-us-image {
-		top: 63%;
+		top: 40%;
 	}
 }
 
@@ -104,11 +105,13 @@ contactus {
 	}
 
 	.button-backtohome {
-		left: 28%;
+		left: 30%;
+		top: 85%;
 	}
 
 	.contact-us-image {
-		top: 63%;
+		top: 58%;
+		left: 35%;
 	}
 }
 
@@ -438,6 +441,8 @@ nav {
 	grid-template-columns: 5fr 5fr 5fr;
 	align-items: center;
 	gap: 35px;
+
+
 }
 
 .article {
@@ -503,6 +508,56 @@ nav {
 	font-size: 18px;
 }
 
+@media (width <=375px) {
+	.news-page {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		margin-left: 28%;
+		width:100%;
+	}
+
+	.air-pollution-article {
+		width: 100%;
+		/* Full width */
+		display: flex;
+		flex-direction: column;
+		/* Stack the image and text */
+		align-items: center;
+		/* Center-align the flex items */
+		padding: 20px;
+		margin-bottom: 20px;
+		margin-left: 20px;
+	}
+
+	.air-pollution-article img {
+		width: 100%;
+		/* Full width of the container */
+		height: auto;
+		/* Maintain aspect ratio */
+		margin-bottom: 20px;
+		/* Optional: adds space between the image and the text */
+	}
+
+	.article-row {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* Center-align the articles */
+	}
+
+	/* Center-align the content boxes */
+	.content-box-climate-changes,
+	.content-box-electric-car,
+	.content-box-sweat {
+		max-width: 100%;
+		margin: 0;
+		/* Remove auto margin to allow centering */
+	}
+}
+
+
+
 .modal {
 	display: none;
 	position: fixed;
@@ -512,7 +567,7 @@ nav {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
-	background-color: rgb(0 0 0 / 40%);
+	background-color: grey;
 }
 
 .modal-content {
@@ -986,13 +1041,13 @@ body {
 	font-size: 18px;
 
 	@media (width >=375px) {
-		top: 10%;
+		top: 50%;
 		left: 30%;
 	}
 
 	@media (width >=768px) {
-		top: 60%;
-		left: 60%;
+		top: 50%;
+		left: 55%;
 	}
 
 }
@@ -1011,13 +1066,13 @@ body {
 	left: 30%;
 	font-size: 18px;
 
-	@media (width <=375px) {
+	@media (width >=375px) {
 		top: 60%;
-		left: 26%;
+		left: 27%;
 	}
 
-	@media (width <=768px) {
-		top: 60%;
-		left: 24%;
+	@media (width >=768px) {
+		top: 50%;
+		left: 26%;
 	}
 }
