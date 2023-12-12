@@ -215,8 +215,13 @@ contactus {
 @media (width <=375px) {
 	.button-contact-about {
 		position: absolute;
-		top: 165%;
-		left: 50%;
+		top: 150%;
+		left: 55%;
+	}
+
+	.drive,
+	.approach{
+		text-align: center;
 	}
 }
 
@@ -714,16 +719,6 @@ body {
 	height: 100%;
 }
 
-@media (width <=768px) {
-.wave-transparent svg {
-	height: 100%;
-}
-
-.home-page{
-	min-width: 880px;
-}
-}
-
 .cupology {
 	color: var(--green-800, #0A3622);
 	font-family: BioRhyme, serif;
@@ -760,6 +755,62 @@ body {
 	font-size: 32px;
 	top: 80%;
 	left: 47%;
+}
+
+@media (width <=768px) {
+	.wave-transparent svg {
+		height: 100%;
+	}
+	
+	.cupology{
+		font-size: 40px;
+		left: 25%;
+		top: 10%;
+	}
+
+	.slogan {
+		line-height: 45px;
+		top: 35%;
+		left: 8%;
+		font-size: 28px;
+		text-align: center;
+	}
+	
+	.button-get-started {
+		top: 70%;
+		left: 32%;
+	}
+
+	.button-contact{
+		top:85%;
+		left: 40%;
+	}
+
+	}
+
+@media (width <=375px) {
+	.cupology{
+		font-size: 28px;
+		left: 25%;
+		top: 18%;
+	}
+
+	.slogan {
+		line-height: 30px;
+		top: 35%;
+		left: 28%;
+		font-size: 20px;
+	}
+	
+	.button-get-started {
+		top: 60%;
+		left: 28%;
+	}
+
+	.button-contact{
+		top:80%;
+		left: 42%;
+	}
 }
 
 #three {
