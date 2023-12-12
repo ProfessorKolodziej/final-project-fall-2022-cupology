@@ -220,7 +220,7 @@ contactus {
 	}
 
 	.drive,
-	.approach{
+	.approach {
 		text-align: center;
 	}
 }
@@ -566,9 +566,10 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	font-size: 3rem;
+	font-size: 55px;
 	font-weight: bold;
-	color: #000;
+	color: black;
+	font-family: BioRhyme, serif;
 }
 
 .back-button2 {
@@ -647,14 +648,11 @@ body {
 }
 
 .image-container-result {
-	background-color: white;
+	background-color: whitesmoke;
 	display: flex;
 	margin-top: 15%;
 	border-radius: 8px;
-}
-
-.center-text {
-	color: black;
+	padding: 2%;
 }
 
 .looksgood-button1 {
@@ -761,8 +759,8 @@ body {
 	.wave-transparent svg {
 		height: 100%;
 	}
-	
-	.cupology{
+
+	.cupology {
 		font-size: 40px;
 		left: 25%;
 		top: 10%;
@@ -775,21 +773,21 @@ body {
 		font-size: 28px;
 		text-align: center;
 	}
-	
+
 	.button-get-started {
 		top: 70%;
 		left: 32%;
 	}
 
-	.button-contact{
-		top:85%;
+	.button-contact {
+		top: 85%;
 		left: 40%;
 	}
 
-	}
+}
 
 @media (width <=375px) {
-	.cupology{
+	.cupology {
 		font-size: 28px;
 		left: 25%;
 		top: 18%;
@@ -801,14 +799,14 @@ body {
 		left: 28%;
 		font-size: 20px;
 	}
-	
+
 	.button-get-started {
 		top: 60%;
 		left: 28%;
 	}
 
-	.button-contact{
-		top:80%;
+	.button-contact {
+		top: 80%;
 		left: 42%;
 	}
 }
@@ -819,6 +817,42 @@ body {
 	align-items: center;
 	justify-content: center;
 	padding: 20px;
+
+}
+
+.image-container-big {
+	display: flex;
+	justify-content: center;
+}
+
+.image-container-text-container {
+	padding: 3%;
+}
+
+.three-heading {
+	font-size: 35px;
+	color: #0A3622;
+	margin-bottom: 10px;
+}
+
+.three-text {
+	font-size: 20px;
+	color: black;
+}
+
+.order-now-button {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: "DM serif Text", serif;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
 }
 
 #four {
