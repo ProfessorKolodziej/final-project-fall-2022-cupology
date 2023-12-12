@@ -714,8 +714,14 @@ body {
 	height: 100%;
 }
 
+@media (width <=768px) {
 .wave-transparent svg {
 	height: 100%;
+}
+
+.home-page{
+	min-width: 880px;
+}
 }
 
 .cupology {

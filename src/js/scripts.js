@@ -7,6 +7,7 @@
 // - You'll need to link this file to your HTML :)
 // Mug type gallery variables and functions
 let currentMugImageIndex = 1;
+let latestImagePath = "images/w1.png"
 const totalMugImages = 3; // Assuming you have 3 mug images
 
 const displayedMugImage = document.getElementById('displayed-image');
@@ -50,6 +51,7 @@ function changeColorImage(change) {
 
   const colorName = colorNames[currentColorImageIndex - 1]; // Arrays are 0-indexed
   displayedColorImage.src = `images/w${currentMugImageIndex}-${colorName}.png`;
+  latestImagePath = `images/w${currentMugImageIndex}-${colorName}.png`;
 }
 
 // Event listeners for the color gallery buttons
@@ -81,15 +83,14 @@ nextButton1.addEventListener('click', function () {
   hideSection(sectionOne);
   showSection(sectionTwo);
   displayedMugImage2.src = `images/w${currentMugImageIndex}.png`;
-  console.log("log is ", displayedMugImage.src)
+  console.log("log is ", displayedMugImage2.src)
 });
 
 // Event listener for the second "Looks Good! Next" button
 nextButton2.addEventListener('click', function () {
   hideSection(sectionTwo);
   showSection(sectionThree);
-  displayedMugImage3.src = `images/w${currentMugImageIndex}.png`;
-  console.log("log is ", displayedMugImage.src)
+  displayedMugImage3.src = latestImagePath;
 });
 
 backButton.addEventListener('click', function () {
