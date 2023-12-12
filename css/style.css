@@ -7,53 +7,6 @@ a {
 	/* This makes the link color the same as the parent element, or you can set a specific color */
 }
 
-/*style for index.html*/
-.home-page {
-	background-image: url('/images/home-background.png');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-}
-
-.header-home {
-	position: relative;
-	height: 100px;
-	top: -2.5%;
-}
-
-.header {
-	position: relative;
-	height: 120px;
-	background-color: #0A3622;
-}
-
-.slogan {
-	font-family: "DM serif Text", serif;
-	font-size: 30px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 40px;
-	position: absolute;
-	top: 45%;
-	left: 47%;
-}
-
-.button-get-started {
-	display: inline-block;
-	padding: 14px 48px;
-	margin: 5px;
-	border-radius: 7px;
-	text-decoration: none;
-	color: white;
-	background-color: #06281E;
-	transition: background-color 0.3s ease;
-	position: absolute;
-	font-size: 32px;
-	top: 80%;
-	left: 47%;
-}
-
 /* style for contactus.html */
 html,
 contactus {
@@ -62,10 +15,12 @@ contactus {
 
 .contact-us-image {
 	width: 30%;
+
 	/* Set the width to 50% of the containing element */
 	height: auto;
 	position: absolute;
 	left: 32%;
+
 	/* Maintain the aspect ratio */
 }
 
@@ -75,7 +30,7 @@ contactus {
 	font-style: normal;
 	font-weight: 700;
 	line-height: normal;
-	font-size: 72px;
+	font-size: 60px;
 	margin-top: -100px;
 	text-align: center;
 }
@@ -115,6 +70,12 @@ contactus {
 }
 
 /* style for about.html */
+.header {
+	position: relative;
+	height: 120px;
+	background-color: #0A3622;
+}
+
 .text-content {
 	color: var(--gray-900, #0A3622);
 	font-family: "DM Serif Text", serif;
@@ -124,7 +85,7 @@ contactus {
 	line-height: 48px;
 }
 
-.sustainu {
+.sustain-intro {
 	color: var(--green-800, #0A3622);
 	font-family: BioRhyme, serif;
 	font-style: normal;
@@ -160,6 +121,110 @@ contactus {
 	margin-left: -1%;
 	fill: #D2DACE;
 }
+
+@media (width <=375px) {
+	.header {
+		width: 150%;
+	}
+
+	.sustainu {
+		font-weight: 600;
+		font-size: 55px;
+		position: absolute;
+		top: 8%;
+		left: 50%;
+	}
+
+	.intro-p {
+		display: flex;
+		width: 450px;
+		height: 110px;
+		font-size: 18.3px;
+		margin-top: 120px;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.image-content {
+		display: none;
+	}
+
+	.drive h2,
+	.approach h2,
+	.drive p,
+	.approach p {
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+		width: 460px;
+	}
+}
+
+/* Styles for drive and approach sections */
+.drive,
+.approach {
+	margin-left: 50px;
+	margin-right: 20px;
+	color: #000;
+	font-family: "DM serif Text", serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	margin-bottom: 30px;
+	letter-spacing: 0.5px;
+}
+
+.drive h2,
+.approach h2 {
+	font-size: 35px;
+	color: #0A3622;
+	margin-bottom: 30px;
+}
+
+/* Footer and contact button styles */
+.footer {
+	background-color: #D2DACE;
+	color: #fff;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 50px;
+}
+
+.button-contact-about {
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	border-radius: 20px;
+	top: 153%;
+	left: 45%;
+	font-size: 18px;
+}
+
+@media (width <=768px) {
+	.button-contact-about {
+		top: 105%;
+		left: 40%;
+	}
+}
+
+@media (width <=375px) {
+	.button-contact-about {
+		position: absolute;
+		top: 150%;
+		left: 55%;
+	}
+
+	.drive,
+	.approach {
+		text-align: center;
+	}
+}
+
 
 .wave-transparent {
 	fill: #0A3622;
@@ -207,56 +272,6 @@ nav {
 .image-content img {
 	width: 100%;
 	height: auto;
-}
-
-.about-background {
-	background-color: #D2DACE;
-}
-
-/* Styles for drive and approach sections */
-.drive,
-.approach {
-	margin-left: 50px;
-	margin-right: 20px;
-	color: #000;
-	font-family: "DM serif Text", serif;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 30px;
-	margin-bottom: 30px;
-	letter-spacing: 0.5px;
-}
-
-.drive h2,
-.approach h2 {
-	font-size: 35px;
-	color: #0A3622;
-	margin-bottom: 30px;
-}
-
-/* Footer and contact button styles */
-.footer {
-	background-color: #D2DACE;
-	color: #fff;
-	text-align: center;
-	padding: 20px 0;
-	margin-top: 50px;
-}
-
-.button-contact-about {
-	display: inline-block;
-	padding: 10px 20px;
-	margin: 5px;
-	text-decoration: none;
-	color: white;
-	background-color: #06281E;
-	transition: background-color 0.3s ease;
-	border-radius: 20px;
-	position: absolute;
-	top: 130%;
-	left: 45%;
-	font-size: 18px;
 }
 
 .news-page {
@@ -430,18 +445,6 @@ nav {
 	line-height: 32px;
 }
 
-.cupology {
-	color: var(--green-800, #0A3622);
-	font-family: BioRhyme, serif;
-	font-style: normal;
-	font-weight: 700;
-	line-height: normal;
-	font-size: 60px;
-	position: absolute;
-	top: 8%;
-	left: 46%;
-}
-
 .button-contact {
 	display: inline-block;
 	padding: 10px 20px;
@@ -563,15 +566,15 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
-	font-size: 3rem;
+	font-size: 55px;
 	font-weight: bold;
-	color: #000;
+	color: black;
+	font-family: BioRhyme, serif;
 }
 
 .back-button2 {
 	position: fixed;
 	top: 90%;
-	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
@@ -586,7 +589,6 @@ body {
 .looksgood-button2 {
 	position: fixed;
 	top: 90%;
-	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
@@ -623,6 +625,20 @@ body {
 	background-color: transparent;
 }
 
+.previous-image-color {
+	position: absolute;
+	top: 50%;
+	left: 20%;
+	background-color: transparent;
+}
+
+.next-image-color {
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	background-color: transparent;
+}
+
 #two {
 	display: none;
 	flex-direction: column;
@@ -631,31 +647,12 @@ body {
 	padding: 20px;
 }
 
-#color-checkboxes {
-	text-align: center;
-	font-size: 1.5em;
-	position: absolute;
-	top: 20%;
-	left: 34%;
-	/* Adjust size as needed */
-}
-
-#color-checkboxes input[type="radio"] {
-	transform: scale(1.5);
-	/* Enlarge the radio buttons */
-	margin: 10px 15px 10px 5px;
-	/* Provide some spacing around the buttons */
-}
-
-#color-checkboxes label {
-	margin: 0 20px;
-	/* Spacing between each label */
-	display: inline-block;
-	/* This helps maintain alignment and margin */
-}
-
-.center-text {
-	color: black;
+.image-container-result {
+	background-color: #DAE5D6;
+	display: flex;
+	margin-top: 15%;
+	border-radius: 8px;
+	padding: 2%;
 }
 
 .looksgood-button1 {
@@ -695,4 +692,173 @@ body {
 #prevBtn img,
 #nextImageTrigger img {
 	width: 50px;
+}
+
+/* style for index.html */
+.home-page {
+	background-image: url('/images/home-background.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.header-home {
+	position: relative;
+	height: 12.85%;
+}
+
+.wave-transparent {
+	fill: #0A3622;
+	transform: scaleX(-1) scaleY(-1);
+	position: absolute;
+	top: 0;
+	bottom: auto;
+	height: 100%;
+}
+
+.cupology {
+	color: var(--green-800, #0A3622);
+	font-family: BioRhyme, serif;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	font-size: 50px;
+	position: absolute;
+	top: 8%;
+	left: 46%;
+}
+
+.slogan {
+	font-family: "DM serif Text", serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 350;
+	line-height: 40px;
+	position: absolute;
+	top: 43%;
+	left: 47%;
+}
+
+.button-get-started {
+	display: inline-block;
+	padding: 14px 48px;
+	margin: 5px;
+	border-radius: 7px;
+	text-decoration: none;
+	color: white;
+	background-color: #06281E;
+	transition: background-color 0.3s ease;
+	position: absolute;
+	font-size: 32px;
+	top: 80%;
+	left: 47%;
+}
+
+@media (width <=768px) {
+	.wave-transparent svg {
+		height: 100%;
+	}
+
+	.cupology {
+		font-size: 40px;
+		left: 25%;
+		top: 10%;
+	}
+
+	.slogan {
+		line-height: 45px;
+		top: 35%;
+		left: 8%;
+		font-size: 28px;
+		text-align: center;
+	}
+
+	.button-get-started {
+		top: 70%;
+		left: 32%;
+	}
+
+	.button-contact {
+		top: 85%;
+		left: 40%;
+	}
+
+}
+
+@media (width <=375px) {
+	.cupology {
+		font-size: 28px;
+		left: 25%;
+		top: 18%;
+	}
+
+	.slogan {
+		line-height: 30px;
+		top: 35%;
+		left: 28%;
+		font-size: 20px;
+	}
+
+	.button-get-started {
+		top: 60%;
+		left: 28%;
+	}
+
+	.button-contact {
+		top: 80%;
+		left: 42%;
+	}
+}
+
+#three {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+
+}
+
+.image-container-big {
+	display: flex;
+	justify-content: center;
+}
+
+.image-container-text-container {
+	padding: 3%;
+}
+
+.three-heading {
+	font-size: 35px;
+	color: #0A3622;
+	margin-bottom: 10px;
+}
+
+.three-text {
+	font-size: 18px;
+	color: black;
+}
+
+.order-now-button {
+	position: absolute;
+	top: 70%;
+	left: 52%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: "DM serif Text", serif;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+#four {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
 }

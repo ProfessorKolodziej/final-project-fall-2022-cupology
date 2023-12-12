@@ -5,199 +5,128 @@
 // - Do not use onclick - use addEventListener instead
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
+// Mug type gallery variables and functions
+let currentMugImageIndex = 1;
+let latestImagePath = "images/w1.png"
+const totalMugImages = 3; // Assuming you have 3 mug images
 
-let imageIndex = 1;
-const totalImages = 3;
+const displayedMugImage = document.getElementById('displayed-image');
+const displayedMugImage2 = document.getElementById('displayed-image-2');
+const displayedMugImage3 = document.getElementById('displayed-image3');
+const previousMugButton = document.querySelector('.previous-image');
+const nextMugButton = document.querySelector('.next-image');
 
-const displayedImage = document.getElementById('displayed-image');
+function changeMugImage(change) {
+  currentMugImageIndex += change;
 
-function prevImage() {
-  if (imageIndex - 1 > 0) {
-    imageIndex = imageIndex - 1
-  } else if (imageIndex - 1 <= 0) {
-    imageIndex = 3
+  if (currentMugImageIndex < 1) {
+    currentMugImageIndex = totalMugImages;
+  } else if (currentMugImageIndex > totalMugImages) {
+    currentMugImageIndex = 1;
   }
 
-  displayedImage.src = `/images/w${imageIndex}.png`;
-  logImageIndex();
+  displayedMugImage.src = `images/w${currentMugImageIndex}.png`;
 }
 
-const preButton =
-  document.querySelector(".previous-image");
-console.log(preButton)
-if (preButton !== "undefined") {
-  preButton.addEventListener('click', prevImage);
-  console.log(preButton)
-}
+// Event listeners for the mug type gallery buttons
+previousMugButton.addEventListener('click', () => changeMugImage(-1));
+nextMugButton.addEventListener('click', () => changeMugImage(1));
 
-function nextImage() {
-  imageIndex = (imageIndex % totalImages) + 1;
-  displayedImage.src = `/images/w${imageIndex}.png`;
-  console.log("nextfunction")
-}
+// Color gallery variables and functions
+let currentColorImageIndex = 1; // This starts at 1
+const colorNames = ['white', 'yellow', 'orange']; // Assuming you have 3 color images
 
-const nextButton =
-  document.querySelector(".next-image");
-console.log(nextButton)
-if (nextButton !== "undefined") {
-  nextButton.addEventListener('click', nextImage);
-  console.log(nextButton)
-}
+const displayedColorImage = document.getElementById('displayed-image-2');
+const previousColorButton = document.querySelector('.previous-image-color');
+const nextColorButton = document.querySelector('.next-image-color');
 
-const looksgoodButton1 =
-  document.querySelector(".looksgood-button1");
-console.log(looksgoodButton1)
-if (looksgoodButton1 !== "undefined") {
-  looksgoodButton1.addEventListener('click', ok1);
-  console.log(looksgoodButton1)
-}
+function changeColorImage(change) {
+  currentColorImageIndex += change;
 
-function logImageIndex() {
-  console.log(`search-image：${imageIndex}`);
-}
-
-var imageIndex1 = 1;
-function ok1() {
-  // get-element  
-  var element1 = document.getElementById("one");
-  // display-none  
-  element1.style.display = "none";
-  var element2 = document.getElementById("two");
-  // display-none  
-  element2.style.display = "block";
-  const displayedImage2 = document.getElementById('displayed-image2');
-  if (imageIndex == 1) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
-  } else if (imageIndex == 2) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
-  } else if (imageIndex == 3) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
-  }
-}
-
-function prevImage1() {
-  const displayedImage2 = document.getElementById('displayed-image2');
-  if (imageIndex1 - 1 > 0) {
-    imageIndex1 = imageIndex1 - 1
-  } else if (imageIndex1 - 1 <= 0) {
-    imageIndex1 = 3
-  }
-  if (imageIndex == 1) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
-  } else if (imageIndex == 2) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
-  } else if (imageIndex == 3) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
+  if (currentColorImageIndex < 1) {
+    currentColorImageIndex = colorNames.length;
+  } else if (currentColorImageIndex > colorNames.length) {
+    currentColorImageIndex = 1;
   }
 
+  const colorName = colorNames[currentColorImageIndex - 1]; // Arrays are 0-indexed
+  displayedColorImage.src = `images/w${currentMugImageIndex}-${colorName}.png`;
+  latestImagePath = `images/w${currentMugImageIndex}-${colorName}.png`;
 }
 
-function nextImage1() {
-  const displayedImage2 = document.getElementById('displayed-image2');
-  imageIndex1 = (imageIndex1 % totalImages) + 1;
+// Event listeners for the color gallery buttons
+previousColorButton.addEventListener('click', () => changeColorImage(-1));
+nextColorButton.addEventListener('click', () => changeColorImage(1));
 
-  if (imageIndex == 1) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
-  } else if (imageIndex == 2) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
-  } else if (imageIndex == 3) {
-    displayedImage2.src = `/images/${imageIndex}${imageIndex1}.png`;
-  }
+
+const nextButton1 = document.querySelector('.looksgood-button1');
+const nextButton2 = document.querySelector('.looksgood-button2');
+const sectionOne = document.getElementById('one');
+const sectionTwo = document.getElementById('two');
+const sectionThree = document.getElementById('three');
+const sectionFour = document.getElementById('four');
+const backButton = document.querySelector('.back-button2');
+const orderNow = document.querySelector('.order-now-button');
+
+// Function to hide a section
+function hideSection(section) {
+  section.style.display = 'none';
 }
 
-const nextColorBtn =
-  document.querySelector(".next-image-color");
-console.log(nextColor)
-if (nextColor !== "undefined") {
-  nextbutton.addEventListener('click', nextImage1);
-  console.log(nextColor)
+// Function to show a section
+function showSection(section) {
+  section.style.display = 'block';
 }
 
-function back() {
-  // get-element  
-  var element1 = document.getElementById("one");
-  // display-none  
-  element1.style.display = "block";
-  var element2 = document.getElementById("two");
-  // display-none  
-  element2.style.display = "none";
+// Event listener for the first "Looks Good! Next!" button
+nextButton1.addEventListener('click', function () {
+  hideSection(sectionOne);
+  showSection(sectionTwo);
+  displayedMugImage2.src = `images/w${currentMugImageIndex}.png`;
+  console.log("log is ", displayedMugImage2.src)
+});
 
-  var backgroundment = document.getElementsByClassName('background');
-  backgroundment[0].style.backgroundImage = "url('/images/1.jfif')";
-  // overlay-background-color
-  var overlays = document.getElementsByClassName('overlay');
-  for (var i = 0; i < overlays.length; i++) {
-    overlays[i].style.backgroundColor = 'rgba(0, 0, 0, 0.4)';
-  }
-}
+// Event listener for the second "Looks Good! Next" button
+nextButton2.addEventListener('click', function () {
+  hideSection(sectionTwo);
+  showSection(sectionThree);
+  displayedMugImage3.src = latestImagePath;
+});
 
-const backButton2 =
-  document.querySelector(".back-button2");
-console.log(backButton2)
-if (backButton2 !== "undefined") {
-  backButton2.addEventListener('click', back);
-  console.log(backButton2)
-}
+backButton.addEventListener('click', function () {
+  hideSection(sectionTwo);
+  showSection(sectionOne);
+});
 
-function ok2() {
-  // body-image 
-  var backgroundment = document.getElementsByClassName('background');
-  backgroundment[0].style.backgroundImage = "url('/images/2.jfif')";
+orderNow.addEventListener('click', function () {
+  hideSection(sectionThree);
+  // Assuming that you want to show the thank you image and it's wrapped in a section with an ID
+  showSection(sectionFour); // You should have a 'sectionFour' defined for this to work
+  displayedthankYouImage.src = `images/thank.png`; // This line ensures the correct image is set
+});
 
-  // overlay-color 
-  var overlays = document.getElementsByClassName('overlay');
-  for (var i = 0; i < overlays.length; i++) {
-    overlays[i].style.backgroundColor = 'rgb(163 163 163 / 47%)';
-  }
-  // get-element 
-  var element2 = document.getElementById("two");
-  // display-none  
-  element2.style.display = "none";
-  var element3 = document.getElementById("three");
-  // display-none  
-  element3.style.display = "block";
 
-  const displayedImage3 = document.getElementById('displayed-image3');
-  if (imageIndex == 1) {
-    displayedImage3.src = `/images/${imageIndex}${imageIndex1}a.png`;
-  } else if (imageIndex == 2) {
-    displayedImage3.src = `/images/${imageIndex}${imageIndex1}a.png`;
-  } else if (imageIndex == 3) {
-    displayedImage3.src = `/images/${imageIndex}${imageIndex1}a.png`;
-  }
-}
-const looksgoodButton2 =
-  document.querySelector(".looksgood-button2");
-console.log(looksgoodButton2)
-if (looksgoodButton2 !== "undefined") {
-  looksgoodButton1.addEventListener('click', ok2);
-  console.log(looksgoodButton2)
-}
 
-function Reset() {
-  // get-confirmation-card  
-  // var result = confirm("confirm to reset?");  
-  document.getElementById("confirmationModal").style.display = "block";
 
-}
 
-function queConfirmation() {
-  location.reload();
-}
-function closeConfirmation() {
-  document.getElementById("confirmationModal").style.display = "none";
-}
 
-function order() {
-  document.getElementById("three").style.display = "none";
-  // body-image
-  var backgroundment = document.getElementsByClassName('background');
-  backgroundment[0].style.backgroundImage = "url('/images/thank.png')";
 
-  // overlay-color 
-  var overlays = document.getElementsByClassName('overlay');
-  for (var i = 0; i < overlays.length; i++) {
-    overlays[i].style.backgroundColor = 'rgb(0 0 0 / 0%)';
-  }
-}
+// function prevImage() {
+//   if (imageIndex - 1 > 0) {
+//     imageIndex = imageIndex - 1
+//   } else if (imageIndex - 1 <= 0) {
+//     imageIndex = 3
+//   }
+
+//   displayedImage.src = `/images/w${imageIndex}.png`;
+//   logImageIndex();
+// }
+
+// const preButton =
+//   document.querySelector(".previous-image");
+// console.log(preButton)
+// if (preButton !== "undefined") {
+//   preButton.addEventListener('click', prevImage);
+//   console.log(preButton)
+// }
 
