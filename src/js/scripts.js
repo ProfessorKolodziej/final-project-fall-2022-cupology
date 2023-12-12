@@ -84,7 +84,6 @@ nextButton1.addEventListener('click', function () {
   console.log("log is ", displayedMugImage.src)
 });
 
-
 // Event listener for the second "Looks Good! Next" button
 nextButton2.addEventListener('click', function () {
   hideSection(sectionTwo);
