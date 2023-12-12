@@ -641,32 +641,11 @@ body {
 	padding: 20px;
 }
 
-#color-checkboxes {
-	text-align: center;
-	font-size: 1.5em;
-	position: absolute;
-	top: 20%;
-	left: 34%;
-
-	/* Adjust size as needed */
-}
-
-#color-checkboxes input[type="radio"] {
-	transform: scale(1.5);
-
-	/* Enlarge the radio buttons */
-	margin: 10px 15px 10px 5px;
-
-	/* Provide some spacing around the buttons */
-}
-
-#color-checkboxes label {
-	margin: 0 20px;
-
-	/* Spacing between each label */
-	display: inline-block;
-
-	/* This helps maintain alignment and margin */
+.image-container-result {
+	background-color: white;
+	display: flex;
+	margin-top: 15%;
+	border-radius: 8px;
 }
 
 .center-text {
@@ -775,4 +754,20 @@ body {
 	font-size: 32px;
 	top: 80%;
 	left: 47%;
+}
+
+#three {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+#four {
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
 }

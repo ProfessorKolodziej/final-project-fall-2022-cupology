@@ -68,7 +68,7 @@
     <div class="center-text">What color do you want?</div>
     <div>
       <div class="image-container">
-        <img id="displayed-image-2" src="images/w1-white.png">
+        <img id="displayed-image-2">
       </div>
       <div>
         <button type="button" class="previous-image-color">
@@ -89,31 +89,27 @@
   </div>
 
 
-  <div id="three" style="display: none;">
-    <div class="center-text" style="color: rgb(26 63 10);">Your results</div>
-
+  <div id="three">
+    <div class="center-text">Your results</div>
     <div style="display: flex;justify-content: center;">
-      <div class="image-container" style="background-color: #ffffff;display: flex;margin-top: 15%;border-radius: 8px;">
+      <div class="image-container-result">
         <div>
-          <img class="displayed-image3" src="images/w1.png">
+          <img class="displayed-image3">
         </div>
         <div style="padding: 4%;">
           <h3>Great choice!</h3>
           <p>You're all set to be Eco-friendly with your new reusable cup. Enjoy!</p>
+          <div class="order-now-button">Order Now</div>
         </div>
-      </div>
-
-
-      <div class="center-button" onclick="order()">
-        Order Now
       </div>
     </div>
 
 
-  </div>
+    <div id="four">
+      <img src="images/thank.png" alt="thankyou">
+    </div>
 
-
-  <script src="js/scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
