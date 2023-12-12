@@ -8,6 +8,7 @@ a {
 }
 
 /* style for contactus.html */
+/* style for contactus.html */
 html,
 contactus {
 	background-color: #D2DACE;
@@ -69,8 +70,8 @@ contactus {
 
 @media (width <=768px) {
 	.button-backtohome {
-		top: 100%;
-		left: 33%;
+		top: 78%;
+		left: 37%;
 	}
 
 	.contact-p {
@@ -86,7 +87,7 @@ contactus {
 	}
 
 	.contact-us-image {
-		top: 63%;
+		top: 40%;
 	}
 }
 
@@ -104,11 +105,13 @@ contactus {
 	}
 
 	.button-backtohome {
-		left: 28%;
+		left: 30%;
+		top: 85%;
 	}
 
 	.contact-us-image {
-		top: 63%;
+		top: 58%;
+		left: 35%;
 	}
 }
 
@@ -985,14 +988,14 @@ body {
 	left: 55%;
 	font-size: 18px;
 
-	@media (width <=375px) {
-		top: 10%;
+	@media (width >=375px) {
+		top: 50%;
 		left: 30%;
 	}
 
-	@media (width <=768px) {
-		top: 60%;
-		left: 60%;
+	@media (width >=768px) {
+		top: 50%;
+		left: 55%;
 	}
 
 }
@@ -1011,13 +1014,13 @@ body {
 	left: 30%;
 	font-size: 18px;
 
-	@media (width <=375px) {
+	@media (width >=375px) {
 		top: 60%;
-		left: 26%;
+		left: 27%;
 	}
 
-	@media (width <=768px) {
-		top: 60%;
-		left: 24%;
+	@media (width >=768px) {
+		top: 50%;
+		left: 26%;
 	}
 }
