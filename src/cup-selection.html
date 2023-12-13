@@ -19,98 +19,86 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div id="confirmationModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeConfirmation()">&times;</span>
-      <h2>Are you sure?</h2>
-      <p>Resetting this quiz will remove all your choices so far.</p>
-      <div class="modal-buttons">
-        <button type="button" class="close-button" onclick="closeConfirmation()">Close</button>
-        <a href="index.html" class="reset-button">Reset</a>
-      </div>
+
+
+<div class="background"></div>
+<div class="overlay"></div>
+
+
+<div id="one">
+  <div class="center-text">Choose Your Mug Type</div>
+
+  <div>
+    <div class="image-container">
+      <img id="displayed-image" src="images/w1.png">
     </div>
-  </div>
-
-  <div class="background"></div>
-  <div class="overlay"></div>
-  <div class="center-reset" onclick="Reset()">
-    Reset
-  </div>
-
-  <div id="one">
-    <div class="center-text">Choose Your Mug Type</div>
-
     <div>
-      <div class="image-container">
-        <img id="displayed-image" src="images/w1.png">
-      </div>
-      <div>
-        <button type="button" class="previous-image">
-          <img src="images/left.png">
-        </button>
-        <button type="button" class="next-image">
-          <img src="images/right.png">
-        </button>
-      </div>
+      <button type="button" class="previous-image">
+        <img src="images/left.png">
+      </button>
+      <button type="button" class="next-image">
+        <img src="images/right.png">
+      </button>
     </div>
-
-    <div type="button" class="looksgood-button1">
-      Looks Good! Next!
-    </div>
-
   </div>
-  <!-- testing for two-->
-  <!--- test eneded for two-->
+
+  <a href="index.html" class="back-button1">Back</a>
+  <div type="button" class="looksgood-button1">
+    Looks Good! Next!
+  </div>
+
+</div>
+<!-- testing for two-->
+<!--- test eneded for two-->
 
 
-  <div id="two">
-    <div class="center-text">What color do you want?</div>
+<div id="two">
+  <div class="center-text">What color do you want?</div>
+  <div>
+    <div class="image-container">
+      <img id="displayed-image-2">
+    </div>
     <div>
+      <button type="button" class="previous-image-color">
+        <img src="images/left.png" alt="Previous">
+      </button>
+      <button type="button" class="next-image-color">
+        <img src="images/right.png" alt="Next">
+      </button>
+    </div>
+  </div>
+
+  <div class="back-button2">
+    Back
+  </div>
+  <div class="looksgood-button2">
+    Looks Good! Next
+  </div>
+</div>
+
+
+<div id="three">
+  <div class="center-text">Your results</div>
+  <div class="image-container-big">
+    <div class="image-container-result">
       <div class="image-container">
-        <img id="displayed-image-2">
+        <img id="displayed-image3">
       </div>
-      <div>
-        <button type="button" class="previous-image-color">
-          <img src="images/left.png" alt="Previous">
-        </button>
-        <button type="button" class="next-image-color">
-          <img src="images/right.png" alt="Next">
-        </button>
-      </div>
-    </div>
-
-    <div class="back-button2">
-      Back
-    </div>
-    <div class="looksgood-button2">
-      Looks Good! Next
-    </div>
-  </div>
-
-
-  <div id="three">
-    <div class="center-text">Your results</div>
-    <div class="image-container-big">
-      <div class="image-container-result">
-        <div class="image-container">
-          <img id="displayed-image3">
+      <div class="image-container-text-container">
+        <div class="three-heading">
+          <h3>Great choice!</h3>
         </div>
-        <div class="image-container-text-container">
-          <div class="three-heading">
-            <h3>Great choice!</h3>
-          </div>
-          <div class="three-text">
-            <p>You're all set to be Eco-friendly with your new reusable cup. Enjoy!</p>
-          </div>
-          <a href="thankyou.html" class="button-ordernow">Order Now</a>
+        <div class="three-text">
+          <p>You're all set to be Eco-friendly with your new reusable cup. Enjoy!</p>
         </div>
+        <a href="thankyou.html" class="button-ordernow">Order Now</a>
       </div>
     </div>
   </div>
+</div>
 
 
-  <script src="js/scripts.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 
 </html>

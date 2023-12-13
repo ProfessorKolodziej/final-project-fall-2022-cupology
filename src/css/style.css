@@ -47,6 +47,7 @@ contactus {
 	margin-left: 100px;
 	margin-right: 100px;
 	text-align: center;
+	margin-top: -70px;
 }
 
 .button-backtohome {
@@ -59,8 +60,8 @@ contactus {
 	transition: background-color 0.3s ease;
 	border-radius: 20px;
 	position: absolute;
-	top: 150%;
-	left: 38%;
+	top: 97%;
+	left: 42%;
 	font-size: 18px;
 }
 
@@ -514,7 +515,7 @@ nav {
 		flex-direction: column;
 		padding: 10px;
 		margin-left: 28%;
-		width:100%;
+		width: 100%;
 	}
 
 	.air-pollution-article {
@@ -672,6 +673,21 @@ body {
 	font-family: BioRhyme, serif;
 }
 
+.back-button1 {
+	position: fixed;
+	top: 90%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	left: 40%;
+}
+
+
 .back-button2 {
 	position: fixed;
 	top: 90%;
@@ -776,7 +792,6 @@ body {
 .looksgood-button1 {
 	position: fixed;
 	top: 90%;
-	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
@@ -785,6 +800,7 @@ body {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
+	left: 60%;
 }
 
 .image-container img,
