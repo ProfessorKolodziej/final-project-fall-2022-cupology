@@ -8,7 +8,6 @@ a {
 }
 
 /* style for contactus.html */
-/* style for contactus.html */
 html,
 contactus {
 	background-color: #D2DACE;
@@ -47,6 +46,7 @@ contactus {
 	margin-left: 100px;
 	margin-right: 100px;
 	text-align: center;
+	margin-top: -70px;
 }
 
 .button-backtohome {
@@ -59,8 +59,8 @@ contactus {
 	transition: background-color 0.3s ease;
 	border-radius: 20px;
 	position: absolute;
-	top: 150%;
-	left: 38%;
+	top: 97%;
+	left: 42%;
 	font-size: 18px;
 }
 
@@ -402,8 +402,6 @@ nav {
 	font-size: 35px;
 }
 
-/* electric car */
-
 /* sweat */
 .content-box-sweat {
 	max-width: 500px;
@@ -434,8 +432,6 @@ nav {
 }
 
 /* sweat */
-
-
 .article-row {
 	display: grid;
 	grid-template-columns: 5fr 5fr 5fr;
@@ -514,7 +510,7 @@ nav {
 		flex-direction: column;
 		padding: 10px;
 		margin-left: 28%;
-		width:100%;
+		width: 100%;
 	}
 
 	.air-pollution-article {
@@ -532,18 +528,14 @@ nav {
 
 	.air-pollution-article img {
 		width: 100%;
-		/* Full width of the container */
 		height: auto;
-		/* Maintain aspect ratio */
 		margin-bottom: 20px;
-		/* Optional: adds space between the image and the text */
 	}
 
 	.article-row {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		/* Center-align the articles */
 	}
 
 	/* Center-align the content boxes */
@@ -552,7 +544,6 @@ nav {
 	.content-box-sweat {
 		max-width: 100%;
 		margin: 0;
-		/* Remove auto margin to allow centering */
 	}
 }
 
@@ -629,7 +620,7 @@ body {
 	z-index: -999;
 	width: 100%;
 	height: 100%;
-	background-image: url('/images/1.png');
+	background-image: url('../images/1.png');
 	background-size: cover;
 	background-position: center;
 }
@@ -672,6 +663,21 @@ body {
 	font-family: BioRhyme, serif;
 }
 
+.back-button1 {
+	position: fixed;
+	top: 90%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	left: 40%;
+}
+
+
 .back-button2 {
 	position: fixed;
 	top: 90%;
@@ -708,24 +714,6 @@ body {
 .image-container img {
 	max-width: 100%;
 	max-height: 400px;
-}
-
-/*media query for type selection*/
-@media (width <=768px) {
-	.center-text {
-		font-size: 25px;
-	}
-
-	.image-container {
-		margin-top: 30%;
-		max-height: 200px;
-	}
-}
-
-@media (width <=375px) {
-	.image-container {
-		margin-top: 50%;
-	}
 }
 
 /* cup selection */
@@ -776,7 +764,6 @@ body {
 .looksgood-button1 {
 	position: fixed;
 	top: 90%;
-	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
@@ -785,6 +772,21 @@ body {
 	padding: 10px 20px;
 	border-radius: 5px;
 	cursor: pointer;
+	left: 60%;
+}
+
+@media (width <=768px) {
+	.looksgood-button1 {
+		top: 90%;
+		left: 70%;
+		width: 200px;
+		height: 28px;
+	}
+
+	.back-button1 {
+		top: 90%;
+		left: 30%;
+	}
 }
 
 .image-container img,
@@ -829,7 +831,7 @@ body {
 
 /* style for index.html */
 .home-page {
-	background-image: url('/images/home-background.png');
+	background-image: url('../images/home-background.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -962,6 +964,25 @@ body {
 	padding: 3%;
 }
 
+/*media query for type selection*/
+@media (width <=768px) {
+	.center-text {
+		font-size: 25px;
+		top: 20%;
+	}
+
+	.image-container {
+		margin-top: 30%;
+		max-height: 200px;
+	}
+}
+
+@media (width <=375px) {
+	.image-container {
+		margin-top: 50%;
+	}
+}
+
 .three-heading {
 	font-size: 35px;
 	color: #0A3622;
@@ -969,14 +990,13 @@ body {
 }
 
 .three-text {
-	font-size: 20px;
 	color: black;
 }
 
 .button-ordernow {
 	position: absolute;
-	top: 70%;
-	left: 50%;
+	top: 80%;
+	left: 55%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;

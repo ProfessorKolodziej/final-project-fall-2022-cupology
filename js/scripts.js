@@ -7,7 +7,7 @@
 // - You'll need to link this file to your HTML :)
 // Mug type gallery variables and functions
 let currentMugImageIndex = 1;
-let latestImagePath = "images/w1.png"
+let latestImagePath = "images/w1-white.png"
 const totalMugImages = 3; // Assuming you have 3 mug images
 
 const displayedMugImage = document.getElementById('displayed-image');
@@ -123,4 +123,3 @@ backButton.addEventListener('click', function () {
 //   preButton.addEventListener('click', prevImage);
 //   console.log(preButton)
 // }
-
