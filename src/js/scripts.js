@@ -123,4 +123,3 @@ backButton.addEventListener('click', function () {
 //   preButton.addEventListener('click', prevImage);
 //   console.log(preButton)
 // }
-

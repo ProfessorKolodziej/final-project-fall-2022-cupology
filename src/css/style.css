@@ -8,7 +8,6 @@ a {
 }
 
 /* style for contactus.html */
-/* style for contactus.html */
 html,
 contactus {
 	background-color: #D2DACE;
@@ -403,8 +402,6 @@ nav {
 	font-size: 35px;
 }
 
-/* electric car */
-
 /* sweat */
 .content-box-sweat {
 	max-width: 500px;
@@ -435,8 +432,6 @@ nav {
 }
 
 /* sweat */
-
-
 .article-row {
 	display: grid;
 	grid-template-columns: 5fr 5fr 5fr;
@@ -533,18 +528,14 @@ nav {
 
 	.air-pollution-article img {
 		width: 100%;
-		/* Full width of the container */
 		height: auto;
-		/* Maintain aspect ratio */
 		margin-bottom: 20px;
-		/* Optional: adds space between the image and the text */
 	}
 
 	.article-row {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		/* Center-align the articles */
 	}
 
 	/* Center-align the content boxes */
@@ -553,7 +544,6 @@ nav {
 	.content-box-sweat {
 		max-width: 100%;
 		margin: 0;
-		/* Remove auto margin to allow centering */
 	}
 }
 
@@ -630,7 +620,7 @@ body {
 	z-index: -999;
 	width: 100%;
 	height: 100%;
-	background-image: url('/images/1.png');
+	background-image: url('../images/1.png');
 	background-size: cover;
 	background-position: center;
 }
@@ -726,24 +716,6 @@ body {
 	max-height: 400px;
 }
 
-/*media query for type selection*/
-@media (width <=768px) {
-	.center-text {
-		font-size: 25px;
-	}
-
-	.image-container {
-		margin-top: 30%;
-		max-height: 200px;
-	}
-}
-
-@media (width <=375px) {
-	.image-container {
-		margin-top: 50%;
-	}
-}
-
 /* cup selection */
 .previous-image {
 	position: absolute;
@@ -803,6 +775,20 @@ body {
 	left: 60%;
 }
 
+@media (width <=768px) {
+	.looksgood-button1 {
+		top: 90%;
+		left: 70%;
+		width: 200px;
+		height: 28px;
+	}
+
+	.back-button1 {
+		top: 90%;
+		left: 30%;
+	}
+}
+
 .image-container img,
 #prevBtn img,
 #nextImageTrigger img {
@@ -845,7 +831,7 @@ body {
 
 /* style for index.html */
 .home-page {
-	background-image: url('/images/home-background.png');
+	background-image: url('../images/home-background.png');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -978,6 +964,25 @@ body {
 	padding: 3%;
 }
 
+/*media query for type selection*/
+@media (width <=768px) {
+	.center-text {
+		font-size: 25px;
+		top: 20%;
+	}
+
+	.image-container {
+		margin-top: 30%;
+		max-height: 200px;
+	}
+}
+
+@media (width <=375px) {
+	.image-container {
+		margin-top: 50%;
+	}
+}
+
 .three-heading {
 	font-size: 35px;
 	color: #0A3622;
@@ -985,14 +990,13 @@ body {
 }
 
 .three-text {
-	font-size: 20px;
 	color: black;
 }
 
 .button-ordernow {
 	position: absolute;
-	top: 70%;
-	left: 50%;
+	top: 80%;
+	left: 55%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
