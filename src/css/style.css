@@ -8,8 +8,7 @@ a {
 }
 
 /* style for contactus.html */
-html,
-contactus {
+html{
 	background-color: #D2DACE;
 }
 
@@ -271,13 +270,6 @@ contactus {
 	}
 }
 
-
-.wave-transparent {
-	fill: #0A3622;
-	transform: scaleX(-1) scaleY(-1);
-	position: absolute;
-}
-
 .wave-news {
 	position: absolute;
 	bottom: 0;
@@ -515,12 +507,9 @@ nav {
 
 	.air-pollution-article {
 		width: 100%;
-		/* Full width */
 		display: flex;
 		flex-direction: column;
-		/* Stack the image and text */
 		align-items: center;
-		/* Center-align the flex items */
 		padding: 20px;
 		margin-bottom: 20px;
 		margin-left: 20px;
@@ -789,32 +778,7 @@ body {
 	}
 }
 
-.image-container img,
-#prevBtn img,
-#nextImageTrigger img {
-	cursor: pointer;
-}
-
-#prevBtn,
-#nextImageTrigger {
-	position: absolute;
-	top: 50%;
-}
-
-#prevBtn {
-	left: 20%;
-}
-
-#nextImageTrigger {
-	right: 20%;
-}
-
-#prevBtn img,
-#nextImageTrigger img {
-	width: 50px;
-}
-
-/*style for color selection*/
+/* style for color selection */
 @media (width <=768px) {
 	.looksgood-button2 {
 		top: 90%;
@@ -964,7 +928,7 @@ body {
 	padding: 3%;
 }
 
-/*media query for type selection*/
+/* media query for type selection */
 @media (width <=768px) {
 	.center-text {
 		font-size: 25px;

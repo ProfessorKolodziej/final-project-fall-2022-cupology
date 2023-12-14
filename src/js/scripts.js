@@ -98,29 +98,3 @@ backButton.addEventListener('click', function () {
   hideSection(sectionTwo);
   showSection(sectionOne);
 });
-
-
-
-
-
-
-
-
-// function prevImage() {
-//   if (imageIndex - 1 > 0) {
-//     imageIndex = imageIndex - 1
-//   } else if (imageIndex - 1 <= 0) {
-//     imageIndex = 3
-//   }
-
-//   displayedImage.src = `/images/w${imageIndex}.png`;
-//   logImageIndex();
-// }
-
-// const preButton =
-//   document.querySelector(".previous-image");
-// console.log(preButton)
-// if (preButton !== "undefined") {
-//   preButton.addEventListener('click', prevImage);
-//   console.log(preButton)
-// }
