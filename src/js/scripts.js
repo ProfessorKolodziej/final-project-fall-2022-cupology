@@ -26,6 +26,7 @@ function changeMugImage(change) {
   }
 
   displayedMugImage.src = `images/w${currentMugImageIndex}.png`;
+  latestImagePath = `images/w${currentMugImageIndex}.png`;
 }
 
 // Event listeners for the mug type gallery buttons
