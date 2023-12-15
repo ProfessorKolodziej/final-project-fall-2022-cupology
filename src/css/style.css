@@ -975,11 +975,19 @@ body {
 /*media query for result*/
 @media (width <=768px){
 	.image-container-result{
-		flex-direction: column;
-		margin-top: 30%;
+		margin-top: 40%;
+	}
+	.button-ordernow{
+		top: 90%;
+		left: 65%;
 	}
 }
 
+@media (width <=375px){
+	.image-container-result{
+		height: 200px;
+	}
+}
 
 #four {
 	display: none;
