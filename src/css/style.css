@@ -680,7 +680,7 @@ body {
 
 .back-button3 {
 	position: absolute;
-	top: 80%;
+	top: 85%;
 	left: 60%;
 	transform: translate(-50%, -50%);
 	text-align: center;
@@ -973,7 +973,7 @@ body {
 
 .three-heading {
 	font-family: "DM serif Text", serif;
-	font-size: 40px;
+	font-size: 38px;
 	color: #0A3622;
 	margin-bottom: 30px;
 	text-align: center;
@@ -986,14 +986,14 @@ body {
 
 .three-text {
 	font-family: "DM serif Text", serif;
-	font-size: 30px;
+	font-size:25px;
 	color: black;
 	text-align: center;
 }
 
 .button-ordernow {
 	position: absolute;
-	top: 80%;
+	top: 85%;
 	left: 75%;
 	transform: translate(-50%, -50%);
 	text-align: center;
