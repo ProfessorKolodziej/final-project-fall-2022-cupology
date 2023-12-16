@@ -1044,7 +1044,7 @@ body {
 	.image-container-result {
 		display: grid;
 		grid-template-columns: 1fr;
-		padding: 10px 10px;
+		padding: 10px;
 	}
 
 	.image-container-text-container{
