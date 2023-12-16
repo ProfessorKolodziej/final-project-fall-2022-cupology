@@ -67,6 +67,7 @@ const sectionTwo = document.getElementById('two');
 const sectionThree = document.getElementById('three');
 const sectionFour = document.getElementById('four');
 const backButton = document.querySelector('.back-button2');
+const backButton3 = document.querySelector('.back-button3');
 const orderNow = document.querySelector('.order-now-button');
 
 // Function to hide a section
@@ -99,28 +100,7 @@ backButton.addEventListener('click', function () {
   showSection(sectionOne);
 });
 
-
-
-
-
-
-
-
-// function prevImage() {
-//   if (imageIndex - 1 > 0) {
-//     imageIndex = imageIndex - 1
-//   } else if (imageIndex - 1 <= 0) {
-//     imageIndex = 3
-//   }
-
-//   displayedImage.src = `/images/w${imageIndex}.png`;
-//   logImageIndex();
-// }
-
-// const preButton =
-//   document.querySelector(".previous-image");
-// console.log(preButton)
-// if (preButton !== "undefined") {
-//   preButton.addEventListener('click', prevImage);
-//   console.log(preButton)
-// }
+backButton3.addEventListener('click', function () {
+  hideSection(sectionThree);
+  showSection(sectionTwo);
+});
