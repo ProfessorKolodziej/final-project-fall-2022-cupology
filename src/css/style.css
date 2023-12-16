@@ -1131,12 +1131,13 @@ body {
 
 @media (width <=768px) {
 	.button-backtohome-thankyou {
-		top: 50%;
+		top: 88%;
+		left: 55%
 	}
 
 	.button-start-new-design {
-		top: 50%;
-		left: 26%;
+		top: 88%;
+		left: 20%;
 	}
 }
 
