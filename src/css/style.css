@@ -670,17 +670,18 @@ body {
 }
 
 .back-button3 {
-	position: fixed;
+	position: absolute;
 	top: 90%;
+	left: 65%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	font-size: 1.5rem;
+	font-family: "DM serif Text", serif;
 	color: #fff;
 	background-color: #122603;
 	padding: 10px 20px;
-	border-radius: 5px;
+	border-radius: 8px;
 	cursor: pointer;
-	left: 65.5%;
 }
 
 .looksgood-button2 {
@@ -914,6 +915,8 @@ body {
 .image-container-big {
 	display: flex;
 	justify-content: center;
+	position: relative;
+
 }
 
 .image-container-text-container {
@@ -942,6 +945,7 @@ body {
 /* style for result section */
 .image-container-result {
 	background-color: whitesmoke;
+	position: relative;
 	display: flex;
 	flex-direction: row;
 	margin-top: 15%;
@@ -973,7 +977,7 @@ body {
 
 .button-ordernow {
 	position: absolute;
-	top: 80%;
+	top: 70%;
 	left: 65%;
 	transform: translate(-50%, -50%);
 	text-align: center;
