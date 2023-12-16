@@ -67,6 +67,7 @@ const sectionTwo = document.getElementById('two');
 const sectionThree = document.getElementById('three');
 const sectionFour = document.getElementById('four');
 const backButton = document.querySelector('.back-button2');
+const backButton3 = document.querySelector('.back-button3');
 const orderNow = document.querySelector('.order-now-button');
 
 // Function to hide a section
@@ -97,4 +98,9 @@ nextButton2.addEventListener('click', function () {
 backButton.addEventListener('click', function () {
   hideSection(sectionTwo);
   showSection(sectionOne);
+});
+
+backButton3.addEventListener('click', function () {
+  hideSection(sectionThree);
+  showSection(sectionTwo);
 });

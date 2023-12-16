@@ -4,7 +4,7 @@ a {
 }
 
 /* style for contactus.html */
-html{
+html {
 	background-color: #D2DACE;
 }
 
@@ -611,7 +611,7 @@ body {
 	z-index: -998;
 	width: 100%;
 	height: 100%;
-	background-color:#0000004C;
+	background-color: #0000004C;
 }
 
 .center-reset {
@@ -667,6 +667,20 @@ body {
 	border-radius: 5px;
 	cursor: pointer;
 	left: 40%;
+}
+
+.back-button3 {
+	position: fixed;
+	top: 90%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	background-color: #122603;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	left: 65.5%;
 }
 
 .looksgood-button2 {
@@ -945,7 +959,7 @@ body {
 	text-align: center;
 }
 
-#displayed-image3{
+#displayed-image3 {
 	width: 500px;
 	margin-bottom: 30px;
 }
@@ -973,23 +987,23 @@ body {
 }
 
 /* media query for result */
-@media (width <=768px){
-	.image-container-result{
+@media (width <=768px) {
+	.image-container-result {
 		margin-top: 40%;
 	}
 
-	.button-ordernow{
+	.button-ordernow {
 		top: 70%;
 		left: 50%;
 	}
 
-	.image-container{
+	.image-container {
 		margin-top: 20px;
 	}
 }
 
-@media (width <=375px){
-	.image-container-result{
+@media (width <=375px) {
+	.image-container-result {
 		flex-direction: column;
 		height: 100%;
 	}
@@ -1061,19 +1075,19 @@ body {
 		left: 55%;
 	}
 
-	.button-start-new-design{
+	.button-start-new-design {
 		top: 50%;
 		left: 26%;
 	}
 }
 
 @media (width <=375px) {
-	.button-start-new-design{
+	.button-start-new-design {
 		top: 60%;
 		left: 27%;
 	}
 
-	.thankyou-p{
+	.thankyou-p {
 		font-size: 18px;
 	}
 
@@ -1082,7 +1096,7 @@ body {
 		left: 30%;
 	}
 
-	.thankyou-head{
+	.thankyou-head {
 		font-size: 35px;
 	}
 }
